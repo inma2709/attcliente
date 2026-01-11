@@ -1,0 +1,151 @@
+/* =========================================================
+   Recursos Audiovisuales (RA)
+   Alineado con global.css: tokens, sombras, radios, superficies
+   ========================================================= */
+
+.ra {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+/* Header (cierre de teoría) */
+.ra__hero {
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Título/lead con más contraste */
+.ra__title {
+  color: var(--text-color);
+  font-size: var(--fs-4);
+  margin-bottom: var(--space-2);
+}
+
+.ra__lead {
+  color: var(--text-color);
+  margin-top: 0.25rem;
+}
+
+/* Cards internas */
+.ra__card {
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Badges: mejora contraste sobre fondos claros */
+.ra__badges .badge {
+  background: color-mix(in srgb, var(--secondary-color) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--secondary-color) 35%, transparent);
+  color: var(--text-color);
+}
+
+/* Bloques de contenido */
+.ra__block {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.ra__h3 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.ra__meta {
+  color: var(--text-light);
+  margin-top: -0.5rem;
+}
+
+/* Callouts propios del componente (sin depender de .callout global) */
+.ra__callout,
+.ra__panel {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--surface-muted);
+  padding: var(--space-4);
+  color: var(--text-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.ra__panel--soft {
+  background: color-mix(in srgb, var(--accent-color) 10%, var(--surface-muted));
+  border-color: color-mix(in srgb, var(--accent-color) 25%, var(--border-color));
+}
+
+.ra__calloutTitle,
+.ra__panelTitle {
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+  color: var(--text-color);
+}
+
+/* Listas */
+.ra__list {
+  padding-left: 1.25rem;
+  color: var(--text-color);
+}
+
+.ra__olist {
+  padding-left: 1.25rem;
+  color: var(--text-color);
+}
+
+.ra__list li,
+.ra__olist li {
+  margin: 0.35rem 0;
+}
+
+/* Embed: refuerzo visual + asegura “se ve” */
+.ra__embed {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-md);
+  background: #0b1220; /* fondo oscuro suave para enmarcar el vídeo */
+  min-height: 220px;   /* evita sensación de “no se ve” en layouts raros */
+}
+
+/* Link alternativo */
+.ra__link {
+  font-size: var(--fs-1);
+  color: var(--text-light);
+}
+
+.ra__link a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ra__link a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Tabla: legibilidad */
+.ra__table th,
+.ra__table td {
+  color: var(--text-color);
+}
+
+/* Nota */
+.ra__note {
+  margin-top: var(--space-2);
+  color: var(--text-color);
+}
+
+/* Footer */
+.ra__footer {
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ra {
+    gap: var(--space-3);
+  }
+  .ra__title {
+    font-size: 1.4rem;
+  }
+}

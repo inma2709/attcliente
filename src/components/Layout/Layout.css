@@ -1,0 +1,87 @@
+/* =========================
+   LAYOUT (header fijo + sidebar fijo)
+   ========================= */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Zona central: el contenido debe ocupar el alto real disponible */
+.layout-content {
+  display: flex;
+  flex: 1;
+  min-height: 0; /* clave para que overflow funcione */
+}
+
+/* Contenido principal
+   - margen para sidebar en desktop
+   - padding consistente
+   - scroll propio */
+.main-content {
+  flex: 1;
+  min-width: 0;
+
+  padding: 2rem;
+  margin-left: var(--sidebar-width);
+
+  background-color: var(--white);
+
+  /* Scroll: el body no debe “bailar” */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  /* Altura estable teniendo en cuenta header/footer */
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  margin-top: var(--header-height);
+}
+
+/* Mejora anclas/targets cuando hay header fijo */
+.main-content :target {
+  scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .layout-content {
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+
+    height: calc(100vh - var(--header-height));
+    margin-top: var(--header-height);
+  }
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .main-content {
+    scroll-behavior: auto;
+  }
+}
+
+/* =========================
+   SIDEBAR COLLAPSE LAYOUT ADJUSTMENTS
+   ========================= */
+
+/* Transition suave del contenido principal */
+.main-content {
+  transition: margin-left 0.3s ease;
+}
+
+/* Cuando sidebar está colapsado, expandir contenido */
+.layout.sidebar-collapsed .main-content {
+  margin-left: 60px;
+}
+
+/* En móviles, el sidebar colapsado no afecta el layout */
+@media (max-width: 768px) {
+  .layout.sidebar-collapsed .main-content {
+    margin-left: 0;
+  }
+}

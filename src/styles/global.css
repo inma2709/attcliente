@@ -1,0 +1,987 @@
+/* =========================================================
+   0) RESET + BASE
+   ========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7; /* manual: un poco más cómodo para lectura */
+  color: var(--text-color);
+  background-color: var(--background-color);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selección de texto (detalle “pro”) */
+::selection {
+  background: rgba(245, 158, 11, 0.25);
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Links: en manual conviene que se noten */
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Focus accesible y consistente */
+:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+  box-shadow: var(--focus-ring);
+}
+
+/* Reduce motion para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================================
+   1) TOKENS / VARIABLES (Paleta Atención al Cliente)
+   ========================================================= */
+:root {
+  /* Verde principal MÁS CLARO */
+  --primary-color: #2fb7aa;     /* verde amable */
+  --secondary-color: #6edbd0;   /* verde muy claro */
+  --accent-color: #f59e0b;      /* ámbar */
+
+  /* Texto */
+  --text-color: #1f2937;
+  --text-light: #4b5563;
+
+  /* Fondos */
+  --background-color: #f9fcfb;  /* casi blanco */
+  --white: #ffffff;
+
+  /* Superficies */
+  --surface: var(--white);
+  --surface-muted: #eaf7f5;     /* verde muy suave */
+  --surface-strong: #d7f0ec;    /* para callouts */
+
+  /* Bordes */
+  --border-color: #d6ece8;
+  --border-strong: #bfe3dd;
+
+  /* Sombras (muy suaves) */
+  --shadow: 0 10px 30px rgba(47, 183, 170, 0.18);
+  --shadow-sm: 0 2px 10px rgba(47, 183, 170, 0.12);
+
+  /* Layout */
+  --sidebar-width: 300px;
+  --header-height: 70px;
+  --footer-height: 60px;
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  /* Tipografía */
+  --fs-1: 0.875rem;
+  --fs-2: 1rem;
+  --fs-3: 1.125rem;
+  --fs-4: 1.5rem;
+  --fs-5: 2rem;
+
+  /* Links */
+  --link-color: #0f766e;
+
+  /* Focus */
+  --focus-ring: 0 0 0 4px rgba(245, 158, 11, 0.35);
+
+  /* Espaciados */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  
+  /* Contenedor */
+  --container-max: 1200px;
+}
+
+/* =========================================================
+   2) ESTRUCTURA PRINCIPAL (mantengo tus clases)
+   ========================================================= */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Evita saltos visuales si header/footer son fixed */
+.main-container {
+  flex: 1;
+  display: flex;
+  margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+/* Área de contenido */
+.content-area {
+  flex: 1;
+  padding: var(--space-5);
+  margin-left: var(--sidebar-width);
+  background-color: var(--surface);
+  min-height: inherit;
+}
+
+/* Contenedor interior opcional */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   3) TIPOGRAFÍA Y CONTENIDO
+   ========================================================= */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+  margin-bottom: var(--space-3);
+}
+
+h1 { font-size: var(--fs-5); }
+h2 { font-size: var(--fs-4); }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+
+p {
+  font-size: var(--fs-2);
+  color: var(--text-color);
+  margin-bottom: var(--space-3);
+}
+
+.muted { color: var(--text-light); }
+
+/* Listas */
+ul, ol {
+  padding-left: 1.25rem;
+  margin-bottom: var(--space-4);
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+/* =========================================================
+   4) COMPONENTES UTILITARIOS (CARDS, DIVISORES, BADGES)
+   ========================================================= */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-4);
+}
+
+.card--muted {
+  background: var(--surface-muted);
+}
+
+.divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: var(--space-4) 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: var(--fs-1);
+
+  background: rgba(20, 184, 166, 0.14);
+  border: 1px solid rgba(20, 184, 166, 0.28);
+  color: #0b4f4a;
+}
+
+/* =========================================================
+   5) BLOQUES PARA IMÁGENES (MEDIA)
+   ========================================================= */
+.media {
+  background: var(--surface-muted);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+.media-caption {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--fs-1);
+  color: var(--text-light);
+  border-top: 1px solid var(--border-color);
+}
+
+.img-frame {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.media-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Curriculum grid para la página home */
+.curriculum-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.curriculum-item {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-4);
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.curriculum-number {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: var(--fs-1);
+  flex-shrink: 0;
+}
+
+.curriculum-content h4 {
+  margin-bottom: var(--space-2);
+  color: var(--text-color);
+}
+
+.curriculum-content p {
+  color: var(--text-light);
+  font-size: var(--fs-1);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .media-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   6) VÍDEOS EMBEBIDOS RESPONSIVE (iframes)
+   ========================================================= */
+.embed {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  background: #000;
+}
+
+.embed::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.embed iframe,
+.embed video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed--4x3::before { padding-top: 75%; }
+.embed--1x1::before { padding-top: 100%; }
+
+.video-block {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.video-title {
+  font-weight: 800;
+  font-size: var(--fs-3);
+}
+
+.video-meta {
+  font-size: var(--fs-1);
+  color: var(--text-light);
+}
+
+/* =========================================================
+   7) ACCESIBILIDAD: SKIP LINK
+   ========================================================= */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  padding: 0.75rem 1rem;
+  background: var(--accent-color);
+  color: #1a1a1a;
+  border-radius: var(--radius-sm);
+  z-index: 9999;
+}
+
+.skip-link:focus-visible {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* =========================================================
+   8) BLOQUES DIDÁCTICOS (E-LEARNING)
+   ========================================================= */
+/* Callouts tipo “Consejo / Ejemplo / Caso / Actividad” */
+.callout {
+  border: 1px solid var(--border-color);
+  background: var(--surface-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.callout-title {
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.callout p {
+  color: var(--text-color);
+}
+
+.callout--tip {
+  border-left: 6px solid var(--secondary-color);
+}
+
+.callout--example {
+  border-left: 6px solid var(--primary-color);
+}
+
+.callout--case {
+  border-left: 6px solid var(--accent-color);
+}
+
+.callout--activity {
+  border-left: 6px solid var(--success);
+}
+
+/* Objetivos del tema */
+.learning-objectives {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.learning-objectives h3 {
+  margin-bottom: var(--space-2);
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.checklist li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  padding: 0.45rem 0;
+}
+
+.checklist li::before {
+  content: "✓";
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-top: 0.05rem;
+}
+
+/* Tablas para manual */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.85rem 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.table th {
+  background: var(--surface-strong);
+  color: #0b4f4a;
+  font-weight: 800;
+}
+
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Glosario */
+.glossary {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.glossary-item {
+  padding: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--border-color);
+}
+
+.glossary-item:first-child {
+  border-top: 0;
+}
+
+.glossary-term {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.glossary-def {
+  color: var(--text-light);
+  margin-top: 0.25rem;
+}
+
+/* =========================================================
+   14) RESPONSIVE
+   ========================================================= */
+@media (max-width: 768px) {
+  :root {
+    --sidebar-width: 250px;
+    --header-height: 60px;
+    --space-5: 1rem;
+    --space-6: 1.5rem;
+  }
+  
+  .content-area {
+    margin-left: 0;
+    padding: var(--space-4);
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 var(--space-2);
+  }
+  
+  .hero {
+    padding: var(--space-4);
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .topic-details > summary {
+    padding: var(--space-3);
+    padding-right: 2.5rem;
+  }
+
+  .topic-details__content {
+    padding: var(--space-4);
+  }
+
+  .debate-questions li {
+    padding-left: 2.5rem;
+  }
+
+  .btn-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-row .btn {
+    justify-content: center;
+  }
+  
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .curriculum-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .curriculum-number {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .topic-section__title {
+    flex-direction: column;
+    gap: var(--space-1);
+    align-items: flex-start;
+  }
+}
+/* =========================================================
+   10) ESTRUCTURA DE TEMAS: sections + details/summary
+   ========================================================= */
+
+/* ✅ Tokens que faltan (tu CSS usa --success en callout--activity) */
+:root{
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #f59e0b; /* ya tienes accent, pero esto ayuda en quiz/debate */
+}
+
+/* =========================================================
+   7) TOPIC (TEMA)
+   ========================================================= */
+.topic {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.topic-section {
+  margin-bottom: var(--space-6);
+  width: 100%;
+}
+
+.topic-section__title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.topic-section__title h2 {
+  margin: 0;
+  font-size: var(--fs-4);
+  color: var(--primary-color);
+}
+
+.topic-section__meta {
+  font-size: var(--fs-1);
+  color: var(--text-light);
+  font-weight: normal;
+}
+
+/* =========================================================
+   10.1) Acordeón accesible con details/summary
+   ========================================================= */
+.topic-accordion {
+  display: grid;
+  gap: var(--space-2);
+}
+
+/* Cada subtema */
+.topic-details {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Header clicable */
+.topic-details > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  font-weight: 800;
+  user-select: none;
+  background: linear-gradient(0deg, var(--surface), var(--surface-muted));
+  border-bottom: 1px solid transparent;
+}
+
+/* Quitar marcador por defecto */
+.topic-details > summary::-webkit-details-marker { display: none; }
+
+/* Indicador (chevron simple con CSS) */
+.topic-details > summary::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  transform: rotate(45deg);
+  transition: transform 180ms ease;
+  flex-shrink: 0;
+}
+
+/* Estado abierto */
+.topic-details[open] > summary {
+  border-bottom-color: var(--border-color);
+}
+
+.topic-details[open] > summary::after {
+  transform: rotate(-135deg);
+}
+
+/* Contenido del subtema */
+.topic-details__content{
+  padding: var(--space-4);
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* Subtítulos dentro del subtema */
+.topic-details__content h4{
+  font-size: 1.1rem;
+  margin-top: var(--space-2);
+}
+
+/* Links dentro de acordeón */
+.topic-details__content a{
+  text-decoration-thickness: 2px;
+}
+
+/* =========================================================
+   10.2) Debate
+   ========================================================= */
+.debate {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.debate-questions{
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.debate-prompt{
+  border-left: 6px solid var(--accent-color);
+  background: var(--surface-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  border: 1px solid var(--border-color);
+}
+
+/* =========================================================
+   10.3) Test (5 preguntas) + feedback
+   ========================================================= */
+.quiz {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.quiz-question{
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-4);
+}
+
+.quiz-question__title{
+  font-weight: 900;
+  margin-bottom: var(--space-2);
+}
+
+.quiz-options{
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.quiz-option{
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+
+/* feedback (ponlo dinámicamente desde JS) */
+.quiz-feedback{
+  margin-top: var(--space-2);
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--surface-muted);
+  font-size: var(--fs-1);
+}
+
+.quiz-feedback--ok{
+  border-color: rgba(22, 163, 74, 0.35);
+  background: rgba(22, 163, 74, 0.10);
+}
+
+.quiz-feedback--bad{
+  border-color: rgba(220, 38, 38, 0.30);
+  background: rgba(220, 38, 38, 0.08);
+}
+
+/* Botones (si no tienes aún uno global) */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  font-weight: 800;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--fs-2);
+}
+
+.btn:hover{
+  border-color: var(--primary-color);
+}
+
+.btn-primary{
+  background: var(--primary-color);
+  color: #062a26;
+  border-color: rgba(0,0,0,0.08);
+}
+
+.btn-primary:hover{
+  filter: brightness(0.98);
+}
+
+.btn-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+/* =========================================================
+   6) HERO - ARREGLADO COMPLETAMENTE
+   ========================================================= */
+.hero {
+  margin-bottom: var(--space-6);
+  background: linear-gradient(180deg, var(--surface), var(--surface-muted));
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: none;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
+  color: var(--text-color);
+  text-wrap: balance;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--text-light);
+  margin: 0;
+  width: 100%;
+  max-width: none;
+}
+
+.hero-media {
+  width: 100%;
+  margin-top: var(--space-5);
+}
+
+.hero-media img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+
+.hero--stacked {
+  display: block;
+}
+
+.hero--stacked .hero-content {
+  margin-bottom: var(--space-4);
+}
+/* =========================================================
+   BLOQUE · ENLACES RECOMENDADOS
+   ========================================================= */
+
+.links-section {
+  background: transparent;
+}
+
+/* Caja principal */
+.links-box {
+  background: linear-gradient(
+    180deg,
+    var(--surface),
+    var(--surface-muted)
+  );
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* Título del bloque */
+.links-box__title {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Lista */
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* Item individual */
+.links-item {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-sm);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.links-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* Enlace */
+.links-item a {
+  font-weight: 800;
+  font-size: var(--fs-2);
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.links-item a:hover {
+  text-decoration: underline;
+}
+
+/* Descripción */
+.links-desc {
+  margin-top: 0.25rem;
+  font-size: var(--fs-1);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+/* ✅ AÑADIR AL CSS (solo si NO tienes un grid de 2 columnas ya)
+   Nota: no puedo “verificar el archivo adjunto” porque aquí solo me consta un PDF,
+   así que te dejo un añadido mínimo y seguro, sin romper tu estilo. */
+
+.compare-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .compare-grid{
+    grid-template-columns: 1fr;
+  }
+}

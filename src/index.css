@@ -1,0 +1,9 @@
+/* Reset básico para compatibilidad */
+html {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Los estilos principales están en /src/styles/global.css */
