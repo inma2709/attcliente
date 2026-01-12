@@ -32,6 +32,13 @@ const menuItems = [
     path: '/tema04',
     icon: '⭐'
   },
+   {
+    id: 10,
+    title: 'Experiencia de cliente memorable',
+    path: '/tema11',
+    icon: '💻'
+  },
+  
   {
     id: 6,
     title: 'Comunicación presencial y habilidades sociales',

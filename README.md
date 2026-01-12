@@ -25,12 +25,11 @@ Este proyecto presenta un manual integral de atención al cliente que funciona c
 7. **Comunicación telefónica y gestión de centralitas**
 8. **Comunicación escrita y redacción de documentos**
 9. **Uso de nuevas tecnologías y canales telemáticos**
-10. **Tratamiento y circulación de la correspondencia**
-11. **Sistemas de clasificación y archivo de la documentación**
-12. **Detección de necesidades y evaluación de la satisfacción**
-13. **Atención de quejas, reclamaciones y gestión de conflictos**
-14. **Fidelización del cliente y servicio posventa**
-15. **Protección de datos, seguridad y confidencialidad**
+
+10. **Detección de necesidades y evaluación de la satisfacción**
+11. **Atención de quejas, reclamaciones y gestión de conflictos**
+12. **Fidelización del cliente y servicio posventa**
+13. **Protección de datos, seguridad y confidencialidad**
 
 ## Tecnologías Utilizadas
 

@@ -16,10 +16,10 @@ const TemaXX = () => {
         <figure className="media">
           <img
             src="/t14.png"
-            alt="Atencion telefónica profesional"
+            alt="Fidelizacion del cliente y servicio posventa"
           />
           <figcaption>
-           La atención telefónica profesional requiere una estructura clara, manejo estratégico de la voz y adaptación al perfil del cliente.
+          Fidelizacion del cliente y servicio postventa. La fase más importante de la relación con el cliente.
           </figcaption>
         </figure>
 

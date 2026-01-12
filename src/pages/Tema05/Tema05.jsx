@@ -13,6 +13,15 @@ const Tema05 = () => {
        
       />
 
+  <figure className="media">
+          <img
+            src="/t5.png"
+            alt="Comunicación presencial y habilidades sociales"
+          />
+          <figcaption>
+           Técnicas de atención cara a cara, importancia del lenguaje no verbal, asertividad, empatía y escucha activa.
+          </figcaption>
+        </figure>
       {/* =========================
           SECCIÓN 5 · HABILIDADES CLAVE (TEMA EXTENSO + DIDÁCTICO)
          ========================= */}
