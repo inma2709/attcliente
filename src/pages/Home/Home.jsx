@@ -5,8 +5,10 @@ const Home = () => {
     <article className="topic">
       <header className="hero">
         <div className="hero-content">
-          <h1>Bienvenidos al Arte de la Excelencia</h1>
-          <p className="muted">Introducción Integral a la Atención al Cliente</p>
+          <h1>Gestión de la Experiencia del Cliente</h1>
+<p className="muted">
+  Claves para comprender, atender y fidelizar al cliente de forma eficaz.
+</p>
         </div>
       </header>
 
