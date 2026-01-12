@@ -3,20 +3,53 @@ import RecursosAudiovisuales from '../../components/RecursosAudiovisuales';
 const Home = () => {
   return (
     <article className="topic">
-      <header className="hero">
-        <div className="hero-content">
-          <h1>Gestión de la Experiencia del Cliente</h1>
-<p className="muted">
-  Claves para comprender, atender y fidelizar al cliente de forma eficaz.
-</p>
-        </div>
-      </header>
-
-      {/* Imagen de introducción */}
+       {/* Imagen de introducción */}
       <figure className="hero-media">
         <img src="/intro.png" alt="Introducción al manual de atención al cliente" />
         <figcaption className="media-caption">Inicio del curso: la excelencia se construye con método, comunicación y consistencia.</figcaption>
       </figure>
+  <header className="hero">
+  <div className="hero-content">
+    <span className="hero-eyebrow">Manual profesional · Atención al Cliente</span>
+
+    <h1>Atención al Cliente</h1>
+    <h2 className="hero-subtitle">Una profesión exigente, humana y esencial</h2>
+
+    <p className="muted">
+      Trabajar en atención al cliente es una de las tareas más complejas y, al mismo tiempo,
+      más valiosas dentro de cualquier organización. No se trata solo de atender consultas
+      o resolver incidencias, sino de <strong>sostener relaciones humanas</strong> en contextos
+      de presión, expectativas y emociones.
+    </p>
+
+    <p className="muted">
+      Quien desempeña este rol gestiona conflictos, equilibra intereses y representa los
+      valores de la empresa en cada interacción. Es una profesión que exige{" "}
+      <strong>criterio técnico, inteligencia emocional, comunicación eficaz y ética profesional</strong>.
+    </p>
+
+    <div className="hero-highlight">
+      <p>
+        Sin atención al cliente no hay confianza, no hay fidelización y no hay experiencia
+        de cliente. Cada interacción bien gestionada impacta directamente en la reputación
+        de la empresa y en la satisfacción de las personas.
+      </p>
+    </div>
+
+    <p className="muted">
+      Este manual tiene un objetivo claro:{" "}
+      <strong>convertir la atención al cliente en una competencia estratégica</strong>.
+      Aquí no aprenderás a “aguantar” situaciones difíciles, sino a{" "}
+      <strong>intervenir con criterio, profesionalidad y dignidad</strong>, transformando
+      cada contacto en una oportunidad de generar valor, confianza y sostenibilidad para
+      la empresa, y reconocimiento profesional para quien presta el servicio.
+    </p>
+  </div>
+</header>
+
+
+
+     
 
       <section className="topic-section">
         <p>
@@ -43,7 +76,7 @@ const Home = () => {
 
       <section className="topic-section">
         <div className="topic-section__title">
-          <h2>¿Por qué Este Manual Es Diferente?</h2>
+          <h2>¿Qué vas a encontrar en este manual?</h2>
         </div>
 
         <div className="media-grid">
@@ -62,7 +95,7 @@ const Home = () => {
             <h4>Enfoque Integral</h4>
             <p>
               Esta introducción ha sido diseñada para sumergirte en el ecosistema de la
-              <strong>comunicación empresarial y la atención al cliente</strong>, integrando conceptos técnicos,
+              <strong>comunicación empresarial y la atención al cliente </strong>, integrando conceptos técnicos,
               estratégicos y humanos de manera profunda.
             </p>
           </div>
@@ -72,9 +105,9 @@ const Home = () => {
             <h4>Excelencia Real (No "Atender Bien")</h4>
             <p>
               La excelencia no consiste solo en resolver incidencias: consiste en
-              <strong>diseñar experiencias memorables</strong>, cuidar los
-              <strong>momentos de verdad</strong> y mantener una conducta profesional coherente con los
-              <strong>valores</strong> de la empresa incluso bajo presión.
+              <strong> diseñar experiencias memorables </strong>, cuidar los
+              <strong> momentos de verdad </strong> y mantener una conducta profesional coherente con los
+              <strong> valores </strong> de la empresa incluso bajo presión.
             </p>
           </div>
         </div>
@@ -145,15 +178,7 @@ const Home = () => {
             </div>
           </details>
 
-          <details className="topic-details">
-            <summary>📁 La Gestión Documental y el Archivo</summary>
-            <div className="topic-details__content">
-              <p>
-                Una empresa que no registra su actividad es una empresa sin memoria. Aprenderás el tratamiento de la
-                <strong>correspondencia</strong> y los sistemas de <strong>clasificación</strong> (alfabético, numérico, cronológico).
-              </p>
-            </div>
-          </details>
+         
 
           <details className="topic-details">
             <summary>🤝 Conflictos, Reclamaciones y Fidelización</summary>
@@ -215,11 +240,19 @@ const Home = () => {
 
       <section className="topic-section">
         <div className="topic-section__title">
-          <h2>Temario Completo - 18 Módulos</h2>
+          <h2>Temario Completo - 16 Módulos</h2>
           <span className="topic-section__meta">
             Cada módulo está diseñado para construir sobre el anterior, creando un conocimiento sólido, actual y aplicable
           </span>
         </div>
+       
+          <div className="curriculum-item">
+            <span className="curriculum-number">00</span>
+            <div className="curriculum-content">
+              <h4>Errores críticos en atención al cliente y cómo evitarlos</h4>
+              <p>Identificación y prevención de fallos comunes en la atención al cliente </p>
+            </div>
+          </div>
 
         <div className="curriculum-grid">
           <div className="curriculum-item">
@@ -294,24 +327,10 @@ const Home = () => {
             </div>
           </div>
 
+         
+
           <div className="curriculum-item">
             <span className="curriculum-number">10</span>
-            <div className="curriculum-content">
-              <h4>Circulación de Correspondencia</h4>
-              <p>Registro, trazabilidad y trámites con la Administración Pública</p>
-            </div>
-          </div>
-
-          <div className="curriculum-item">
-            <span className="curriculum-number">11</span>
-            <div className="curriculum-content">
-              <h4>Sistemas de Archivo</h4>
-              <p>Organización de documentos físicos y digitales</p>
-            </div>
-          </div>
-
-          <div className="curriculum-item">
-            <span className="curriculum-number">12</span>
             <div className="curriculum-content">
               <h4>Detección de Necesidades y CRM</h4>
               <p>Evaluación de satisfacción, encuestas y seguimiento</p>
@@ -319,7 +338,7 @@ const Home = () => {
           </div>
 
           <div className="curriculum-item">
-            <span className="curriculum-number">13</span>
+            <span className="curriculum-number">11</span>
             <div className="curriculum-content">
               <h4>Gestión de Conflictos</h4>
               <p>Quejas, reclamaciones, mediación, arbitraje y negociación</p>
@@ -327,7 +346,7 @@ const Home = () => {
           </div>
 
           <div className="curriculum-item">
-            <span className="curriculum-number">14</span>
+            <span className="curriculum-number">12</span>
             <div className="curriculum-content">
               <h4>Fidelización y Posventa</h4>
               <p>Retención, seguimiento, up-selling y relación duradera</p>
@@ -335,7 +354,7 @@ const Home = () => {
           </div>
 
           <div className="curriculum-item">
-            <span className="curriculum-number">15</span>
+            <span className="curriculum-number">13</span>
             <div className="curriculum-content">
               <h4>Seguridad y Protección de Datos</h4>
               <p>LOPDGDD/RGPD, confidencialidad y buenas prácticas</p>
@@ -343,7 +362,7 @@ const Home = () => {
           </div>
 
           <div className="curriculum-item">
-            <span className="curriculum-number">16</span>
+            <span className="curriculum-number">14</span>
             <div className="curriculum-content">
               <h4>Experiencia del Cliente (CX)</h4>
               <p>Customer journey, momentos de verdad y gestión de expectativas</p>
@@ -351,7 +370,7 @@ const Home = () => {
           </div>
 
           <div className="curriculum-item">
-            <span className="curriculum-number">17</span>
+            <span className="curriculum-number">15</span>
             <div className="curriculum-content">
               <h4>Gestión Emocional del Profesional</h4>
               <p>Autocontrol, resiliencia, estrés y prevención del burnout</p>
@@ -359,7 +378,7 @@ const Home = () => {
           </div>
 
           <div className="curriculum-item">
-            <span className="curriculum-number">18</span>
+            <span className="curriculum-number">16</span>
             <div className="curriculum-content">
               <h4>Ética, Valores y Atención Inclusiva</h4>
               <p>Trato respetuoso, diversidad, no discriminación y coherencia corporativa</p>
@@ -382,7 +401,7 @@ const Home = () => {
               <em>
                 Si hoy fueras el dueño de tu propia empresa y tuvieras que contratar a alguien
                 para atender a tus mejores clientes, ¿te contratarías a ti mismo con los
-                conocimientos que tienes ahora?
+                conocimientos y aptitudes que tienes ahora?
               </em>
             </p>
           </div>

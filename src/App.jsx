@@ -16,6 +16,8 @@ import Tema12 from './pages/Tema12/Tema12';
 import Tema13 from './pages/Tema13/Tema13';
 import Tema14 from './pages/Tema14/Tema14';
 import Tema15 from './pages/Tema15/Tema15';
+import Tema16 from './pages/Tema16/Tema16';
+import Tema00 from './pages/Tema00/Tema00';
 import './App.css';
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
           <Route path="/tema13" element={<Tema13 />} />
           <Route path="/tema14" element={<Tema14 />} />
           <Route path="/tema15" element={<Tema15 />} />
+          <Route path="/tema16" element={<Tema16 />} />
+          <Route path="/tema00" element={<Tema00 />} />
         </Routes>
       </Layout>
     </Router>

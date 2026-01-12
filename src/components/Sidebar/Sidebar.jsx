@@ -10,6 +10,12 @@ const menuItems = [
   },
   {
     id: 2,
+    title: 'Errores críticos en atención al cliente y cómo evitarlos',
+    path: '/tema00',
+    icon: '🏢'
+  },
+  {
+    id: 2,
     title: 'La organización empresarial y el proceso de información',
     path: '/tema01',
     icon: '🏢'
@@ -87,6 +93,12 @@ const menuItems = [
     title: 'Fidelización del cliente y servicio posventa',
     path: '/tema14',
     icon: '❤️'
+  },
+   {
+    id: 15,
+    title: 'Ética, Valores y Atención Inclusiva',
+    path: '/tema16',
+    icon: '⚖️'
   },
   {
     id: 16,

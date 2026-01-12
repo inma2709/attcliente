@@ -3,142 +3,116 @@ import "./RecursosAudiovisuales.css";
 const RecursosAudiovisuales = () => {
   const VIDEO_ID_1 = "5xGoNUkHpZQ";
   const VIDEO_ID_2 = "xOruWLZmVYM";
+  const VIDEO_ID = "Towv9Cibny4";
 
   return (
     <section className="container ra">
       <header className="card ra__hero">
-        <h2 className="ra__title">Recursos audiovisuales (cierre de teoría)</h2>
+        <h2 className="ra__title">Recursos audiovisuales</h2>
+
         <p className="ra__lead">
-          Estos vídeos se ven <strong>al final de la teoría</strong> y{" "}
-          <strong>justo antes del debate</strong>. La idea es transformar la teoría
-          en criterios prácticos: cómo pensar, cómo actuar y cómo mejorar.
+          En cada capítulo hemos seleccionado cuidadosamente vídeos cortos y prácticos que complementan la teoría con
+          ejemplos reales y aplicaciones profesionales. Estos recursos están pensados para:
+        </p>
+
+        <ul className="ra__list">
+          <li>Enriquecer la comprensión de los conceptos teóricos.</li>
+          <li>Proporcionar ejemplos aplicables al día a día.</li>
+          <li>Fomentar el análisis crítico y la discusión en clase.</li>
+        </ul>
+
+        <p className="muted">
+          La intención es que estos vídeos te ayuden a consolidar tus conocimientos y a prepararte para situaciones
+          reales de atención al cliente.
         </p>
 
         <div className="divider" />
 
+        {/* ✅ Nueva visión pedagógica */}
+        <div className="callout callout--tip">
+          <div className="callout-title">🎥 Material audiovisual sugerido</div>
+          <p>
+          
+            Han sido <strong>cuidadosamente seleccionados</strong> por su rigor, claridad y valor para enriquecer la
+            clase magistral con <strong>puntos de vista complementarios</strong>.
+          </p>
+          <p>
+            La idea es contrastar enfoques, escuchar voces expertas y conectar la teoría con situaciones reales.
+            Trabajaremos el contenido desde un enfoque activo: <strong>aprender haciendo</strong>, reflexionando y
+            debatiendo en grupo.
+          </p>
+        </div>
+
+        <div className="divider" />
+
         <div className="ra__callout">
-          <div className="ra__calloutTitle">🧭 Método de trabajo (rápido y efectivo)</div>
+          <div className="ra__calloutTitle">🧭 Sugerencia de método de trabajo</div>
           <ul className="ra__list">
-            <li><strong>Antes (2–3 min):</strong> responde a 3 preguntas guía.</li>
-            <li><strong>Durante:</strong> apunta <strong>3 ideas clave</strong> + <strong>1 ejemplo</strong>.</li>
-            <li><strong>Después (debate):</strong> conecta con un caso real y propone 1 mejora.</li>
+            <li>
+              <strong>Antes:</strong> lee las preguntas guía para activar tu pensamiento crítico.
+            </li>
+            <li>
+              <strong>Durante:</strong> escucha con atención y toma notas breves de ideas clave o conductas aplicables.
+            </li>
+            <li>
+              <strong>Después (debate):</strong> conecta lo visto con un caso real y propone alguna mejora posible.
+            </li>
           </ul>
         </div>
       </header>
 
       <div className="divider" />
 
-      {/* ===================== VÍDEO 1 ===================== */}
-      <article className="card ra__card">
-        <div className="ra__badges">
-          <span className="badge">Nivel: Inicial</span>
-          <span className="badge">Encaja en: Tema 1 · Tema 4</span>
-          <span className="badge">Objetivo: entender el rol</span>
-        </div>
+     
 
-        <div className="divider" />
-
-        <div className="ra__block">
-          <h3 className="ra__h3">🎥 Vídeo 1 — Atención al cliente: escucha activa y factores clave</h3>
-          <p className="ra__meta">Para consolidar lo aprendido en teoría antes del debate.</p>
-
-          <div className="ra__panel">
-            <div className="ra__panelTitle">📌 Conceptos que trabaja este vídeo</div>
-            <ul className="ra__list">
-              <li><strong>Escucha activa:</strong> comprender antes de responder; preguntar, reformular y confirmar.</li>
-              <li><strong>Empatía profesional:</strong> validar emoción + orientar a solución (sin prometer lo imposible).</li>
-              <li><strong>Primer contacto:</strong> tono, saludo, claridad y presencia crean confianza (o la rompen).</li>
-              <li><strong>Actitud + solución:</strong> importa tanto el “qué” como el “cómo”.</li>
-            </ul>
-          </div>
-
-          <div className="ra__panel ra__panel--soft">
-            <div className="ra__panelTitle">🧠 Antes de ver (preguntas guía)</div>
-            <ol className="ra__olist">
-              <li>¿Qué hace que un cliente se sienta <strong>bien tratado</strong> incluso si hay un problema?</li>
-              <li>¿En qué momento sueles “desconectar” al escuchar (queja, repetición, tono…)?</li>
-              <li>Define atención al cliente en <strong>una frase</strong>.</li>
-            </ol>
-          </div>
-
-          {/* Embed mejorado (misma clase global .embed + refuerzo CSS) */}
-          <div className="embed ra__embed">
-            <iframe
-              src={`https://www.youtube.com/embed/${VIDEO_ID_1}`}
-              title="Atención al cliente — Escucha activa y factores clave"
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          </div>
-
-          <p className="ra__link">
-            Si no carga el vídeo:{" "}
-            <a href={`https://www.youtube.com/watch?v=${VIDEO_ID_1}`} target="_blank" rel="noreferrer">
-              Abrir en YouTube
-            </a>
-          </p>
-
-          <div className="ra__panel">
-            <div className="ra__panelTitle">✅ Mini-evidencia (2–4 min, antes del debate)</div>
-            <ul className="ra__list">
-              <li>Escribe 3 ideas clave (en tus palabras).</li>
-              <li>Marca 1 conducta que puedas aplicar mañana (reformular, confirmar, preguntar).</li>
-              <li>Cierra: <em>“El cliente necesita sentir…”</em></li>
-            </ul>
-          </div>
-
-          <div className="ra__panel ra__panel--soft">
-            <div className="ra__panelTitle">💬 Debate tras el vídeo (8–10 min)</div>
-            <ol className="ra__olist">
-              <li>¿Qué pesa más: <strong>la solución</strong> o <strong>la forma</strong>? Pon un ejemplo real.</li>
-              <li>Errores comunes de “falsa escucha” (interrumpir, justificar, minimizar…)</li>
-              <li>Propón 2 frases profesionales para un cliente molesto (empatía sin prometer lo imposible).</li>
-            </ol>
-          </div>
-        </div>
-      </article>
-
-      <div className="divider" />
 
       {/* ===================== VÍDEO 2 ===================== */}
       <article className="card ra__card">
         <div className="ra__badges">
-          <span className="badge">Nivel: Inicial–Medio</span>
-          <span className="badge">Encaja en: Tema 16 · Refuerza 4 y 14</span>
-          <span className="badge">Objetivo: pensar como cliente</span>
+          <span className="badge">Nivel: Inicial</span>
+          <span className="badge">Encaja en: Tema 1 (Introducción)</span>
+          <span className="badge">Objetivo: comprender el concepto</span>
         </div>
 
         <div className="divider" />
 
         <div className="ra__block">
-          <h3 className="ra__h3">🎥 Vídeo 2 — Momentos de verdad: experiencia del cliente (CX)</h3>
-          <p className="ra__meta">Para entender por qué el cliente recuerda “cómo le hiciste sentir”.</p>
+          <h3 className="ra__h3">🎥 ¿Qué es la atención al cliente y por qué es clave para una empresa?</h3>
+
+          <p className="ra__meta">
+            Vídeo introductorio para comprender el papel de la atención al cliente como eje central de la relación entre
+            empresa y mercado.
+          </p>
 
           <div className="ra__panel">
-            <div className="ra__panelTitle">📌 Conceptos que trabaja este vídeo</div>
+            <div className="ra__panelTitle">📌 Qué aporta este vídeo</div>
             <ul className="ra__list">
-              <li><strong>CX:</strong> suma de percepciones durante toda la relación.</li>
-              <li><strong>Momentos de verdad:</strong> instantes críticos donde se gana o se pierde confianza.</li>
-              <li><strong>Expectativa vs percepción:</strong> la comparación que define satisfacción o frustración.</li>
-              <li><strong>Customer Journey:</strong> pasos del viaje (antes/durante/después) donde diseñar excelencia.</li>
+              <li>
+                Definición clara de <strong>qué es la atención al cliente</strong>.
+              </li>
+              <li>
+                Relación directa entre atención al cliente y <strong>éxito empresarial</strong>.
+              </li>
+              <li>Importancia del trato, la comunicación y la resolución de necesidades.</li>
+              <li>
+                Visión del profesional de atención al cliente como <strong>figura clave</strong> de la organización.
+              </li>
             </ul>
           </div>
 
           <div className="ra__panel ra__panel--soft">
             <div className="ra__panelTitle">🧠 Antes de ver (preguntas guía)</div>
             <ol className="ra__olist">
-              <li>Piensa en una marca que recomiendas: ¿qué “momento” generó confianza?</li>
-              <li>¿Qué tolera menos un cliente: error <strong>técnico</strong> o error de <strong>trato</strong>?</li>
-              <li>En una queja, ¿qué busca primero: solución, explicación o reconocimiento?</li>
+              <li>¿Cómo definirías tú la atención al cliente antes de ver este vídeo?</li>
+              <li>¿Crees que la atención al cliente influye realmente en el éxito de una empresa?</li>
+              <li>¿Qué papel crees que desempeña la persona que atiende al cliente?</li>
             </ol>
           </div>
 
           <div className="embed ra__embed">
             <iframe
-              src={`https://www.youtube.com/embed/${VIDEO_ID_2}`}
-              title="Momentos de Verdad — Experiencia del Cliente (CX)"
+              src={`https://www.youtube.com/embed/${VIDEO_ID}`}
+              title="Qué es la atención al cliente"
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -148,84 +122,25 @@ const RecursosAudiovisuales = () => {
 
           <p className="ra__link">
             Si no carga el vídeo:{" "}
-            <a href={`https://www.youtube.com/watch?v=${VIDEO_ID_2}`} target="_blank" rel="noreferrer">
+            <a href={`https://www.youtube.com/watch?v=${VIDEO_ID}`} target="_blank" rel="noreferrer">
               Abrir en YouTube
             </a>
           </p>
 
           <div className="ra__panel">
-            <div className="ra__panelTitle">🧩 Actividad (8–10 min, justo tras el vídeo)</div>
-            <p className="muted">
-              Completa el mapa rápido de “momentos de verdad” para una empresa conocida. Esto será la base del debate.
-            </p>
-
-            <table className="table ra__table">
-              <thead>
-                <tr>
-                  <th>Paso del viaje</th>
-                  <th>Expectativa</th>
-                  <th>Momento de verdad</th>
-                  <th>Qué haría “excelencia”</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Primer contacto</td>
-                  <td>Rapidez y amabilidad</td>
-                  <td>Saludo + orientación</td>
-                  <td>Acogida clara + propuesta de ayuda</td>
-                </tr>
-                <tr>
-                  <td>Espera / cola</td>
-                  <td>Que me informen</td>
-                  <td>Tiempo + comunicación</td>
-                  <td>Explicar tiempos + ofrecer alternativa</td>
-                </tr>
-                <tr>
-                  <td>Incidencia</td>
-                  <td>Que me tomen en serio</td>
-                  <td>Escucha + solución</td>
-                  <td>Empatía + solución + seguimiento</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p className="ra__note">
-              Añade <strong>2 filas más</strong> con tu ejemplo (antes/durante/después).
-            </p>
-          </div>
-
-          <div className="ra__panel ra__panel--soft">
-            <div className="ra__panelTitle">💬 Debate tras el vídeo (10–12 min)</div>
-            <ol className="ra__olist">
-              <li>¿Cuál es el momento de verdad más determinante en tu sector? Justifica.</li>
-              <li>¿Rapidez o calidad del trato? ¿Qué prefiere el cliente y por qué?</li>
-              <li>Diseña una mejora de bajo coste (frase, gesto, señal, mensaje) que eleve la experiencia.</li>
-              <li>¿Qué comportamiento “pequeño” es imperdonable en atención al cliente? ¿Por qué?</li>
-            </ol>
-          </div>
-
-          <div className="ra__panel">
-            <div className="ra__panelTitle">🎯 Cierre</div>
-            <p>
-              La excelencia se construye en detalles repetidos. Cada interacción es un <strong>momento de verdad</strong>.
-            </p>
+            <div className="ra__panelTitle">💬 Tras el vídeo</div>
+            <ul className="ra__list">
+              <li>Reformula con tus palabras qué es la atención al cliente.</li>
+              <li>Explica por qué este trabajo es clave para la supervivencia de una empresa.</li>
+              <li>
+                Completa la frase: <em>“La atención al cliente no es solo…”</em>
+              </li>
+            </ul>
           </div>
         </div>
       </article>
 
-      <div className="divider" />
-
-      <div className="card ra__footer">
-        <div className="ra__panelTitle">✅ Checklist final</div>
-        <ul className="ra__list">
-          <li>He respondido a las preguntas “antes de ver” (mínimo 2 por vídeo).</li>
-          <li>He anotado 3 ideas clave por vídeo (en mis palabras).</li>
-          <li>He identificado al menos 2 “momentos de verdad” en un ejemplo real.</li>
-          <li>He propuesto 1 mejora concreta aplicable en el trabajo.</li>
-          <li>He participado en el debate con un argumento y un ejemplo.</li>
-        </ul>
-      </div>
+      {/* (Opcional) VIDEO_ID_2 queda disponible si lo reutilizas en otro momento */}
     </section>
   );
 };
