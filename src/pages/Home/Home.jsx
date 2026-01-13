@@ -237,179 +237,179 @@ const Home = () => {
           </details>
         </div>
       </section>
+<section className="topic-section">
+  <div className="topic-section__title">
+    <h2>Temario Completo - 17 Módulos</h2>
+    <span className="topic-section__meta">
+      Cada módulo está diseñado para construir sobre el anterior, creando un conocimiento sólido, actual y aplicable
+    </span>
+  </div>
 
-      <section className="topic-section">
-        <div className="topic-section__title">
-          <h2>Temario Completo - 16 Módulos</h2>
-          <span className="topic-section__meta">
-            Cada módulo está diseñado para construir sobre el anterior, creando un conocimiento sólido, actual y aplicable
-          </span>
-        </div>
-       
-          <div className="curriculum-item">
-            <span className="curriculum-number">00</span>
-            <div className="curriculum-content">
-              <h4>Errores críticos en atención al cliente y cómo evitarlos</h4>
-              <p>Identificación y prevención de fallos comunes en la atención al cliente </p>
-            </div>
-          </div>
+  <div className="curriculum-item">
+    <span className="curriculum-number">00</span>
+    <div className="curriculum-content">
+      <h4>Errores críticos en atención al cliente y cómo evitarlos</h4>
+      <p>Identificación y prevención de fallos comunes en la atención al cliente </p>
+    </div>
+  </div>
 
-        <div className="curriculum-grid">
-          <div className="curriculum-item">
-            <span className="curriculum-number">01</span>
-            <div className="curriculum-content">
-              <h4>Organización y Proceso de Información</h4>
-              <p>Elementos de la empresa, organigrama y toma de decisiones</p>
-            </div>
-          </div>
+  <div className="curriculum-grid">
+    <div className="curriculum-item">
+      <span className="curriculum-number">01</span>
+      <div className="curriculum-content">
+        <h4>La organización empresarial y el proceso de información</h4>
+        <p>Elementos de la empresa, organigrama y toma de decisiones</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">02</span>
-            <div className="curriculum-content">
-              <h4>Flujos de Comunicación</h4>
-              <p>Comunicación interna, externa, formal e informal</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">02</span>
+      <div className="curriculum-content">
+        <h4>Fundamentos y flujos de la comunicación empresarial</h4>
+        <p>Comunicación interna, externa, formal e informal</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">03</span>
-            <div className="curriculum-content">
-              <h4>Psicología del Consumidor</h4>
-              <p>Motivaciones, jerarquía de Maslow y tipologías de cliente</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">03</span>
+      <div className="curriculum-content">
+        <h4>Psicología y tipología del cliente</h4>
+        <p>Motivaciones, jerarquía de Maslow y tipologías de cliente</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">04</span>
-            <div className="curriculum-content">
-              <h4>Calidad en el Servicio</h4>
-              <p>Estrategias para la excelencia y supervivencia del negocio</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">04</span>
+      <div className="curriculum-content">
+        <h4>Calidad y oportunidad en el servicio al cliente</h4>
+        <p>Estrategias para la excelencia y supervivencia del negocio</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">05</span>
-            <div className="curriculum-content">
-              <h4>Habilidades Sociales y Cara a Cara</h4>
-              <p>Escucha activa, empatía, asertividad y lenguaje corporal</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">05</span>
+      <div className="curriculum-content">
+        <h4>Comunicación presencial y habilidades sociales</h4>
+        <p>Escucha activa, empatía, asertividad y lenguaje corporal</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">06</span>
-            <div className="curriculum-content">
-              <h4>Protocolo e Imagen</h4>
-              <p>Normas de comportamiento, cortesía e imagen profesional</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">06</span>
+      <div className="curriculum-content">
+        <h4>Protocolo empresarial e imagen personal</h4>
+        <p>Normas de comportamiento, cortesía e imagen profesional</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">07</span>
-            <div className="curriculum-content">
-              <h4>Gestión Telefónica</h4>
-              <p>Pautas de cortesía, centralitas y manejo de situaciones difíciles</p>
-            </div>
-          </div>
+    {/* ✅ NUEVO: Gestión emocional como 07 */}
+    <div className="curriculum-item">
+      <span className="curriculum-number">07</span>
+      <div className="curriculum-content">
+        <h4>Gestión Emocional del Profesional</h4>
+        <p>Autocontrol, resiliencia, estrés y prevención del burnout</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">08</span>
-            <div className="curriculum-content">
-              <h4>Redacción Comercial</h4>
-              <p>Cartas, informes, memorándums, actas y comunicación oficial</p>
-            </div>
-          </div>
+    {/* 🔁 Desplazamos a partir de aquí */}
+    <div className="curriculum-item">
+      <span className="curriculum-number">08</span>
+      <div className="curriculum-content">
+        <h4>Comunicación telefónica y gestión de centralitas</h4>
+        <p>Pautas de cortesía, centralitas y manejo de situaciones difíciles</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">09</span>
-            <div className="curriculum-content">
-              <h4>Nuevas Tecnologías</h4>
-              <p>Chat, email, redes sociales y asistencia virtual</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">09</span>
+      <div className="curriculum-content">
+        <h4>Comunicación escrita y redacción de documentos</h4>
+        <p>Cartas, informes, memorándums, actas y comunicación oficial</p>
+      </div>
+    </div>
 
-         
+    <div className="curriculum-item">
+      <span className="curriculum-number">10</span>
+      <div className="curriculum-content">
+        <h4>Uso de nuevas tecnologías y canales telemáticos</h4>
+        <p>Chat, email, redes sociales y asistencia virtual</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">10</span>
-            <div className="curriculum-content">
-              <h4>Detección de Necesidades y CRM</h4>
-              <p>Evaluación de satisfacción, encuestas y seguimiento</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">11</span>
+      <div className="curriculum-content">
+        <h4>Experiencia de cliente memorable</h4>
+        <p>Customer journey, momentos de verdad y gestión de expectativas</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">11</span>
-            <div className="curriculum-content">
-              <h4>Gestión de Conflictos</h4>
-              <p>Quejas, reclamaciones, mediación, arbitraje y negociación</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">12</span>
+      <div className="curriculum-content">
+        <h4>Detección de necesidades y evaluación de la satisfacción</h4>
+        <p>Evaluación de satisfacción, encuestas y seguimiento</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">12</span>
-            <div className="curriculum-content">
-              <h4>Fidelización y Posventa</h4>
-              <p>Retención, seguimiento, up-selling y relación duradera</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">13</span>
+      <div className="curriculum-content">
+        <h4>Atención de quejas, reclamaciones y gestión de conflictos</h4>
+        <p>Quejas, reclamaciones, mediación, arbitraje y negociación</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">13</span>
-            <div className="curriculum-content">
-              <h4>Seguridad y Protección de Datos</h4>
-              <p>LOPDGDD/RGPD, confidencialidad y buenas prácticas</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">14</span>
+      <div className="curriculum-content">
+        <h4>Fidelización del cliente y servicio posventa</h4>
+        <p>Retención, seguimiento, up-selling y relación duradera</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">14</span>
-            <div className="curriculum-content">
-              <h4>Experiencia del Cliente (CX)</h4>
-              <p>Customer journey, momentos de verdad y gestión de expectativas</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">15</span>
+      <div className="curriculum-content">
+        <h4>Protección de datos, seguridad y confidencialidad</h4>
+        <p>LOPDGDD/RGPD, confidencialidad y buenas prácticas</p>
+      </div>
+    </div>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">15</span>
-            <div className="curriculum-content">
-              <h4>Gestión Emocional del Profesional</h4>
-              <p>Autocontrol, resiliencia, estrés y prevención del burnout</p>
-            </div>
-          </div>
+    <div className="curriculum-item">
+      <span className="curriculum-number">16</span>
+      <div className="curriculum-content">
+        <h4>Ética, Valores y Atención Inclusiva</h4>
+        <p>Trato respetuoso, diversidad, no discriminación y coherencia corporativa</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div className="curriculum-item">
-            <span className="curriculum-number">16</span>
-            <div className="curriculum-content">
-              <h4>Ética, Valores y Atención Inclusiva</h4>
-              <p>Trato respetuoso, diversidad, no discriminación y coherencia corporativa</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="topic-section">
+  <div className="callout callout--example">
+    <div className="callout-title">🚀 Tu Viaje Comienza Ahora</div>
+    <p>
+      Cada minuto de lectura te acercará a ser un profesional capaz de transformar
+      una simple transacción en una experiencia inolvidable.
+    </p>
 
-      <section className="topic-section">
-        <div className="callout callout--example">
-          <div className="callout-title">🚀 Tu Viaje Comienza Ahora</div>
-          <p>
-            Cada minuto de lectura te acercará a ser un profesional capaz de transformar
-            una simple transacción en una experiencia inolvidable.
-          </p>
+    <div className="callout callout--activity" style={{ marginTop: 'var(--space-4)' }}>
+      <div className="callout-title">🤔 Pregunta final de motivación</div>
+      <p>
+        <em>
+          Si hoy fueras el dueño de tu propia empresa y tuvieras que contratar a alguien
+          para atender a tus mejores clientes, ¿te contratarías a ti mismo con los
+          conocimientos y aptitudes que tienes ahora?
+        </em>
+      </p>
+    </div>
 
-          <div className="callout callout--activity" style={{marginTop: 'var(--space-4)'}}>
-            <div className="callout-title">🤔 Pregunta final de motivación</div>
-            <p>
-              <em>
-                Si hoy fueras el dueño de tu propia empresa y tuvieras que contratar a alguien
-                para atender a tus mejores clientes, ¿te contratarías a ti mismo con los
-                conocimientos y aptitudes que tienes ahora?
-              </em>
-            </p>
-          </div>
-          
-          {/* Inserción de los vídeos al final */}
-          <RecursosAudiovisuales />
-        </div>
-      </section>
+    {/* Inserción de los vídeos al final */}
+    <RecursosAudiovisuales />
+  </div>
+</section>
+
     </article>
   );
 };

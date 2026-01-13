@@ -154,93 +154,55 @@ export default function Tema01() {
 
   <div className="topic-accordion">
     <details className="topic-details">
-      <summary>
-        La empresa como organismo vivo
-      </summary>
+      <summary>La empresa como organismo vivo</summary>
 
       <div className="topic-details__content">
         <p>
-          La infografía titulada <strong>«La Anatomía de una Empresa Exitosa»</strong>{" "}
-          representa de forma visual cómo una organización funciona como un{" "}
-          <strong>organismo vivo</strong>, donde la estructura, la información y la
-          comunicación se interrelacionan para garantizar la supervivencia y el
-          éxito comercial.
+          La infografía <strong>«La Anatomía de una Empresa Exitosa»</strong> representa
+          la empresa como un <strong>organismo vivo</strong>, en el que todos sus elementos
+          están interconectados y dependen entre sí para garantizar su supervivencia.
         </p>
 
-        <h4>1. Los 4 pilares de la organización</h4>
         <p>
-          En la parte izquierda de la imagen se muestran los cimientos que sostienen
-          a cualquier empresa:
+          La imagen sintetiza los <strong>elementos fundamentales de la empresa</strong>
+          (personas, recursos, organización y entorno), que se desarrollan de forma
+          sistemática en el apartado teórico, y los muestra funcionando de manera conjunta.
         </p>
 
-        <ul>
-          <li>
-            <strong>Factor humano:</strong> el elemento más valioso y dinámico.
-            Incluye a <strong>propietarios, directivos y empleados</strong>, que
-            constituyen el “rostro” de la organización ante el cliente.
-          </li>
-          <li>
-            <strong>Bienes económicos (capital):</strong> abarcan tanto activos{" "}
-            <em>tangibles</em> como <em>intangibles</em>. Estos últimos (imagen de
-            marca, prestigio, procedimientos) permiten diferenciarse de la
-            competencia.
-          </li>
-          <li>
-            <strong>Organización:</strong> sistema de relaciones de autoridad y
-            coordinación que ordena los recursos hacia un objetivo común. Sin este
-            orden, la empresa no podría funcionar de forma coherente.
-          </li>
-          <li>
-            <strong>Entorno:</strong> contexto externo formado por la competencia y,
-            especialmente, el <strong>cliente</strong>, auténtica razón de ser del
-            negocio.
-          </li>
-        </ul>
-
-        <h4>2. La comunicación: el sistema nervioso</h4>
+        <h4>La comunicación como sistema nervioso</h4>
         <p>
-          En el centro de la infografía, la figura humana simboliza que la{" "}
-          <strong>comunicación es el sistema nervioso de la empresa</strong>. La
-          información de calidad es la base para una toma de decisiones eficaz.
+          En el centro de la imagen, la figura humana simboliza que la
+          <strong> comunicación interna y externa</strong> actúa como el sistema nervioso
+          de la organización, permitiendo la coordinación, la toma de decisiones y la
+          correcta atención al cliente.
         </p>
 
         <ul>
-          <li>
-            <strong>Flujo descendente:</strong> transmite órdenes, planes y valores
-            desde la dirección hacia los niveles operativos.
-          </li>
-          <li>
-            <strong>Flujo ascendente:</strong> lleva informes, quejas y sugerencias
-            desde la primera línea de atención al cliente hacia los directivos.
-          </li>
-          <li>
-            <strong>Flujo horizontal:</strong> facilita la coordinación entre
-            personas del mismo nivel jerárquico para resolver problemas con rapidez.
-          </li>
+          <li><strong>Comunicación descendente:</strong> transmite directrices y valores.</li>
+          <li><strong>Comunicación ascendente:</strong> recoge información del cliente.</li>
+          <li><strong>Comunicación horizontal:</strong> coordina equipos.</li>
         </ul>
 
-        <h4>3. Impacto directo en el cliente final</h4>
+        <h4>Impacto en el cliente</h4>
         <p>
-          En la parte derecha de la imagen aparece un dato clave:
-          <strong> el 68 % de los clientes se pierde por una mala atención</strong>.
-          Este porcentaje demuestra que el éxito empresarial depende en gran medida
-          de la calidad del servicio y de la experiencia del cliente.
+          La infografía destaca que <strong>el 68 % de los clientes se pierde por una mala atención</strong>,
+          subrayando que el éxito empresarial no depende solo del producto, sino de la
+          experiencia vivida por el cliente.
         </p>
 
         <div className="callout callout--example">
-          <h4 className="callout-title">✈️ Analogía: la empresa como aeropuerto</h4>
+          <h4 className="callout-title">✈️ Analogía visual</h4>
           <p>
-            La organización funciona como un <strong>aeropuerto de alta densidad</strong>:
-            los pilares son las pistas, los flujos de comunicación actúan como los
-            radares y el sistema de información es el software que coordina todo.
-            Si los radares fallan, el pasajero (<strong>el cliente</strong>) no
-            llegará a su destino satisfecho.
+            La empresa funciona como un <strong>aeropuerto</strong>: si fallan los sistemas
+            de coordinación y comunicación, el pasajero —el cliente— no llega satisfecho
+            a su destino.
           </p>
         </div>
       </div>
     </details>
   </div>
 </section>
+
 
       <section className="topic-section">
         <div className="topic-section__title">
