@@ -25,7 +25,8 @@ const menuItems = [
   { id: 15, title: 'Atención de quejas, reclamaciones y gestión de conflictos', path: '/tema13', icon: '⚖️' },
   { id: 16, title: 'Fidelización del cliente y servicio posventa', path: '/tema14', icon: '❤️' },
   { id: 17, title: 'Protección de datos, seguridad y confidencialidad', path: '/tema15', icon: '🔒' },
-  { id: 18, title: 'Ética, Valores y Atención Inclusiva', path: '/tema16', icon: '🤝' }
+  { id: 18, title: 'Ética, Valores y Atención Inclusiva', path: '/tema16', icon: '🤝' },
+  { id: 19, title: 'IA', path: '/tema17', icon: '🤖' },
 ];
 
 
