@@ -18,6 +18,9 @@ import Tema14 from './pages/Tema14/Tema14';
 import Tema15 from './pages/Tema15/Tema15';
 import Tema16 from './pages/Tema16/Tema16';
 import Tema17 from './pages/Tema17/Tema17';
+import Tema18 from './pages/Tema18/Tema18';
+import Tema19 from './pages/Tema19/Tema19';
+import Tema20 from './pages/Tema20/Tema20';
 import Tema00 from './pages/Tema00/Tema00';
 import './App.css';
 
@@ -27,6 +30,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/tema00" element={<Tema00 />} />
           <Route path="/tema01" element={<Tema01 />} />
           <Route path="/tema02" element={<Tema02 />} />
           <Route path="/tema03" element={<Tema03 />} />
@@ -44,6 +48,9 @@ function App() {
           <Route path="/tema15" element={<Tema15 />} />
           <Route path="/tema16" element={<Tema16 />} />
           <Route path="/tema17" element={<Tema17 />} />
+          <Route path="/tema18" element={<Tema18 />} />
+          <Route path="/tema19" element={<Tema19 />} />
+          <Route path="/tema20" element={<Tema20 />} />
         </Routes>
       </Layout>
     </Router>

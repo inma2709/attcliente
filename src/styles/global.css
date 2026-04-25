@@ -443,6 +443,16 @@ li {
   border-left: 6px solid var(--success);
 }
 
+.callout--warning {
+  border-left: 6px solid #f59e0b;
+  background: #fffbeb;
+}
+
+.callout--info {
+  border-left: 6px solid #0ea5e9;
+  background: #f0f9ff;
+}
+
 /* Objetivos del tema */
 .learning-objectives {
   background: var(--surface);
@@ -988,4 +998,1185 @@ li {
   .compare-grid{
     grid-template-columns: 1fr;
   }
+}
+
+/* ================================================
+   TEMA 12 — PUNTOS DE DOLOR DEL CLIENTE (Pain Points)
+   ================================================ */
+
+/* --- Grid de tipos de pain points --- */
+.pain-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.1rem;
+  margin-top: 1.2rem;
+}
+.pain-type-card {
+  border-radius: 0.6rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-top: 4px solid #cbd5e1;
+}
+.pain-type-icon { font-size: 1.6rem; margin-bottom: 0.4rem; display: block; }
+.pain-type-card h4 { margin: 0 0 0.5rem; font-size: 0.97rem; }
+.pain-type-card p  { margin: 0 0 0.5rem; font-size: 0.88rem; }
+.pain-type-card ul { margin: 0 0 0.6rem; padding-left: 1.1rem; font-size: 0.86rem; }
+.pain-type-card li { margin-bottom: 0.2rem; }
+.pain-impact {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.3rem;
+  background: #f8fafc;
+  display: inline-block;
+}
+.pain-type--proceso    { border-top-color: #3b82f6; }
+.pain-type--economico  { border-top-color: #ef4444; }
+.pain-type--emocional  { border-top-color: #ec4899; }
+.pain-type--tiempo     { border-top-color: #f59e0b; }
+.pain-type--informacion { border-top-color: #8b5cf6; }
+.pain-type--social     { border-top-color: #64748b; }
+
+/* --- Métodos de detección --- */
+.detection-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+.detection-method {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem 1.1rem;
+  position: relative;
+}
+.detection-method h5 { margin: 0.4rem 0 0.3rem; font-size: 0.95rem; }
+.detection-method p  { margin: 0.2rem 0; font-size: 0.88rem; line-height: 1.55; }
+.method-tip { font-style: italic; color: #475569 !important; }
+.method-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+}
+.method-tag--direct      { background: #dbeafe; color: #1d4ed8; }
+.method-tag--indirect    { background: #fce7f3; color: #be185d; }
+.method-tag--observacion { background: #d1fae5; color: #065f46; }
+.method-tag--datos       { background: #ede9fe; color: #6d28d9; }
+.method-tag--interno     { background: #fef9c3; color: #92400e; }
+
+/* --- Mapa de Empatía --- */
+.empathy-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0.6rem;
+  margin: 1.2rem 0;
+  position: relative;
+}
+.empathy-center {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  color: #fff;
+  border-radius: 0.6rem;
+  padding: 0.8rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.empathy-center span { font-size: 1.8rem; display: block; }
+.empathy-center p    { margin: 0; font-size: 0.9rem; letter-spacing: 0.1em; }
+.empathy-quadrant {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+}
+.empathy-quadrant h5  { margin: 0 0 0.4rem; font-size: 0.9rem; color: #1e40af; }
+.empathy-quadrant p   { margin: 0 0 0.3rem; font-size: 0.84rem; line-height: 1.5; }
+.empathy-example      { font-style: italic; color: #64748b !important; font-size: 0.82rem !important; }
+.empathy-pains {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+}
+.empathy-gains {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+}
+.empathy-pains h5, .empathy-gains h5 { margin: 0 0 0.3rem; font-size: 0.9rem; }
+.empathy-pains p,  .empathy-gains p  { margin: 0; font-size: 0.84rem; }
+
+/* --- Matriz de priorización --- */
+.priority-matrix {
+  margin: 1.2rem 0;
+}
+.matrix-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+.matrix-cell {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+.matrix-cell h5 { margin: 0 0 0.3rem; font-size: 0.93rem; }
+.matrix-cell p  { margin: 0.15rem 0; font-size: 0.84rem; }
+.matrix--alta-alta { background: #fff1f2; border-color: #fca5a5; }
+.matrix--alta-baja { background: #fff7ed; border-color: #fed7aa; }
+.matrix--baja-alta { background: #fefce8; border-color: #fde68a; }
+.matrix--baja-baja { background: #f0fdf4; border-color: #bbf7d0; }
+.matrix-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #64748b;
+  padding: 0 0.3rem;
+}
+.matrix-x-label {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.2rem;
+}
+
+/* --- Flujo de transformación --- */
+.transformation-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1rem;
+}
+.transform-step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.9rem 1rem;
+}
+.transform-number {
+  min-width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.transform-content h5 { margin: 0 0 0.25rem; font-size: 0.94rem; }
+.transform-content p  { margin: 0; font-size: 0.87rem; line-height: 1.55; }
+.transform-arrow {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #94a3b8;
+  padding: 0.1rem 0;
+  line-height: 1;
+}
+
+/* --- Estadísticas de silencio --- */
+.silent-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.stat-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-top: 4px solid #2563eb;
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1e40af;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+.stat-card p { margin: 0; font-size: 0.85rem; line-height: 1.5; }
+
+/* --- Casos de estudio --- */
+.case-study {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #2563eb;
+  border-radius: 0.5rem;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+}
+.case-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.case-icon { font-size: 1.5rem; flex-shrink: 0; }
+.case-header h5 { margin: 0; font-size: 0.97rem; }
+.case-study p { margin: 0.3rem 0; font-size: 0.88rem; line-height: 1.55; }
+
+/* --- Responsive dolor --- */
+@media (max-width: 768px) {
+  .pain-types-grid  { grid-template-columns: 1fr; }
+  .matrix-grid      { grid-template-columns: 1fr; }
+  .silent-stats     { grid-template-columns: repeat(2, 1fr); }
+  .empathy-map      { grid-template-columns: 1fr; }
+}
+
+/* ================================================
+   TEMA 18 — EL VIAJE DEL CLIENTE (Customer Journey)
+   ================================================ */
+
+/* --- Tabla de comparación --- */
+.comparison-table table,
+.cjm-elements-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin-top: 1rem;
+}
+.comparison-table th,
+.comparison-table td,
+.cjm-elements-table th,
+.cjm-elements-table td {
+  border: 1px solid var(--border-color, #e2e8f0);
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+.comparison-table thead th,
+.cjm-elements-table thead th {
+  background: var(--primary-color, #2563eb);
+  color: #fff;
+  font-weight: 600;
+}
+.comparison-table tbody tr:nth-child(even),
+.cjm-elements-table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* --- Fases del viaje --- */
+.phases-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.phase-card {
+  border-left: 5px solid #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.phase-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.phase-card p { margin: 0.2rem 0; font-size: 0.9rem; }
+.phase-icon { font-size: 1.3rem; }
+.phase--awareness  { border-color: #60a5fa; }
+.phase--consideration { border-color: #a78bfa; }
+.phase--decision   { border-color: #34d399; }
+.phase--retention  { border-color: #fb923c; }
+.phase--loyalty    { border-color: #f43f5e; }
+
+/* --- Touchpoints grid --- */
+.touchpoints-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.touchpoint-category {
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+.touchpoint-category h5 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: var(--primary-color, #2563eb);
+}
+.touchpoint-category ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.87rem;
+}
+.touchpoint-category li { margin-bottom: 0.25rem; }
+
+/* --- Momentos de la Verdad --- */
+.mot-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.mot-card {
+  border-radius: 0.6rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.mot-card h4 { margin: 0 0 0.15rem; font-size: 0.97rem; }
+.mot-author  { font-size: 0.78rem; color: #64748b; margin: 0 0 0.5rem; font-style: italic; }
+.mot-card p  { font-size: 0.88rem; margin: 0.25rem 0; }
+.mot--zero   { border-top: 4px solid #6366f1; }
+.mot--first  { border-top: 4px solid #0ea5e9; }
+.mot--second { border-top: 4px solid #10b981; }
+.mot--ultimate { border-top: 4px solid #f59e0b; }
+
+/* --- Cita --- */
+.quote-box {
+  background: #f1f5f9;
+  border-left: 4px solid var(--primary-color, #2563eb);
+  border-radius: 0.4rem;
+  padding: 1rem 1.25rem;
+  margin: 1.2rem 0;
+}
+.quote-box blockquote {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+.quote-box cite { font-size: 0.83rem; color: #64748b; }
+
+/* --- Analogía --- */
+.analogy-box {
+  background: linear-gradient(135deg, #fef9c3, #fef3c7);
+  border-left: 4px solid #f59e0b;
+  border-radius: 0.4rem;
+  padding: 1rem 1.25rem;
+  margin: 1.2rem 0;
+}
+.analogy-box h4 { margin: 0 0 0.4rem; }
+.analogy-box p  { margin: 0; font-size: 0.93rem; }
+
+/* --- Pain Points --- */
+.pain-points-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.pain-card {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+}
+.pain-card h5 { margin: 0 0 0.3rem; font-size: 0.92rem; color: #be123c; }
+.pain-card p  { margin: 0.15rem 0; font-size: 0.86rem; }
+
+/* --- Peak-End Rule --- */
+.peak-end-visual {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+.peak-end-box {
+  flex: 1;
+  min-width: 200px;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+.peak-end-box h4 { margin: 0 0 0.4rem; }
+.peak-end-box p  { margin: 0; font-size: 0.9rem; }
+.peak-end-box.peak { background: #ecfdf5; border-color: #6ee7b7; }
+.peak-end-box.end  { background: #eff6ff; border-color: #93c5fd; }
+
+/* --- Pasos del CJM --- */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.step-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #e2e8f0;
+}
+.step-number {
+  min-width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--primary-color, #2563eb);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-content h5 { margin: 0 0 0.3rem; font-size: 0.95rem; }
+.step-content p  { margin: 0; font-size: 0.88rem; }
+
+/* --- Métricas --- */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.metric-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.metric-badge {
+  display: inline-block;
+  background: var(--primary-color, #2563eb);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.05em;
+}
+.metric-card h5 { margin: 0 0 0.4rem; font-size: 0.93rem; }
+.metric-card p  { margin: 0.2rem 0; font-size: 0.85rem; line-height: 1.5; }
+
+/* --- Cadena de valor --- */
+.chain-visual {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #f0fdf4, #eff6ff);
+  border-radius: 0.6rem;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+.chain-item {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.7rem;
+  font-weight: 500;
+}
+.chain-arrow { color: #94a3b8; font-size: 1.1rem; }
+
+/* --- Momentos WOW --- */
+.wow-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.wow-card {
+  background: linear-gradient(135deg, #fef9c3, #fef3c7);
+  border: 1px solid #fde68a;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.wow-icon { font-size: 1.4rem; flex-shrink: 0; }
+.wow-card p { margin: 0; font-size: 0.87rem; }
+
+/* --- Tarjetas de síntesis --- */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.3rem;
+  margin-top: 1.5rem;
+}
+.summary-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1.5px solid #e2e8f0;
+  border-radius: 0.9rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.summary-card:hover {
+  transform: translateY(-3px);
+  border-color: #cad5e1;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+.summary-card .summary-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+.summary-card h4 { 
+  margin: 0; 
+  font-size: 1.05rem; 
+  font-weight: 700;
+  color: #1e293b;
+}
+.summary-card p  { 
+  margin: 0; 
+  font-size: 0.9rem; 
+  line-height: 1.6; 
+  color: #475569; 
+}
+
+/* --- Autoevaluación --- */
+.self-assessment-list {
+  padding-left: 1.3rem;
+}
+.self-assessment-list li {
+  margin-bottom: 0.9rem;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+/* --- Responsive Tema18 --- */
+@media (max-width: 768px) {
+  .phases-container,
+  .steps-container { gap: 0.7rem; }
+  .mot-cards,
+  .metrics-grid,
+  .summary-cards { grid-template-columns: 1fr; }
+  .peak-end-visual { flex-direction: column; }
+  .chain-visual    { flex-direction: column; gap: 0.3rem; }
+  .chain-arrow     { transform: rotate(90deg); }
+  .touchpoints-grid,
+  .pain-points-grid,
+  .wow-examples    { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   TEMA 19 — TÉCNICAS DE NEGOCIACIÓN CON EL CLIENTE
+   ============================================================ */
+
+/* --- Comparativa distributiva vs. integrativa --- */
+.nego-comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.nego-comp-card {
+  border-radius: 0.6rem;
+  padding: 1.2rem;
+  border: 1.5px solid;
+}
+.nego-comp-card .nego-comp-header {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+.nego-comp-card ul { margin: 0; padding-left: 1.2rem; }
+.nego-comp-card li { margin-bottom: 0.4rem; font-size: 0.88rem; line-height: 1.5; }
+.nego-dist {
+  background: #fff1f2;
+  border-color: #fca5a5;
+}
+.nego-integ {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+/* --- Contextos de negociación --- */
+.nego-contexts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.7rem;
+  margin: 1rem 0;
+}
+.nego-ctx {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* --- Estilos Thomas-Kilmann --- */
+.nego-styles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.9rem;
+  margin: 1.2rem 0;
+}
+.nego-style-card {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1.5px solid;
+}
+.style-icon { font-size: 2rem; margin-bottom: 0.4rem; }
+.style-name { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
+.style-desc { font-size: 0.82rem; line-height: 1.5; color: #475569; }
+.style-compite   { background: #fff1f2; border-color: #fca5a5; }
+.style-colabora  { background: #f0fdf4; border-color: #86efac; }
+.style-compromise{ background: #fefce8; border-color: #fde047; }
+.style-evita     { background: #f1f5f9; border-color: #cbd5e1; }
+.style-cede      { background: #eff6ff; border-color: #93c5fd; }
+
+/* --- Fases del proceso (flow vertical) --- */
+.nego-phases-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin: 1.5rem 0;
+}
+.nego-phase-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 680px;
+  background: #fff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 0.6rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.phase-num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-color, #2563eb);
+  min-width: 2.5rem;
+  line-height: 1;
+  padding-top: 0.1rem;
+}
+.phase-content h4 { margin: 0 0 0.3rem; font-size: 1rem; }
+.phase-content p  { margin: 0; font-size: 0.88rem; color: #475569; line-height: 1.5; }
+.nego-flow-arrow { font-size: 1.2rem; color: #94a3b8; padding: 0.2rem 0; }
+.phase-prep      { border-left: 4px solid #3b82f6; }
+.phase-apertura  { border-left: 4px solid #8b5cf6; }
+.phase-propuesta { border-left: 4px solid #f59e0b; }
+.phase-bargaining{ border-left: 4px solid #10b981; }
+.phase-cierre    { border-left: 4px solid #ef4444; }
+
+/* --- Herramientas analíticas (BATNA / ZOPA / PR) --- */
+.nego-analytical-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 1.2rem 0;
+}
+.nego-tool-card {
+  border-radius: 0.7rem;
+  padding: 1.2rem 1.4rem;
+  border: 1.5px solid;
+}
+.tool-batna { background: #eff6ff; border-color: #93c5fd; }
+.tool-zopa  { background: #f0fdf4; border-color: #86efac; }
+.tool-reservation { background: #fefce8; border-color: #fde047; }
+.tool-acronym   { font-size: 1.7rem; font-weight: 900; letter-spacing: 0.05em; color: #1e3a5f; }
+.tool-fullname  { font-size: 0.88rem; font-style: italic; color: #475569; margin-bottom: 0.1rem; }
+.tool-esp       { font-size: 0.82rem; font-weight: 600; color: #64748b; margin-bottom: 0.6rem; }
+.tool-example   { margin-top: 0.7rem; padding: 0.6rem 0.9rem; background: rgba(255,255,255,0.7); border-radius: 0.4rem; font-size: 0.85rem; line-height: 1.5; }
+.tool-zopa-visual { margin-top: 0.8rem; }
+.zopa-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+}
+.zopa-vendor { color: #dc2626; font-weight: 600; }
+.zopa-buyer  { color: #2563eb; font-weight: 600; }
+.zopa-overlap{
+  background: #bbf7d0;
+  border: 1px solid #86efac;
+  border-radius: 0.3rem;
+  padding: 0.25rem 0.6rem;
+  font-weight: 700;
+  color: #166534;
+}
+
+/* --- Principios Harvard --- */
+.nego-harvard-principles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.harvard-principle {
+  display: flex;
+  gap: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.6rem;
+  padding: 1rem 1.2rem;
+}
+.h-principle-num {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--primary-color, #2563eb);
+  min-width: 2rem;
+}
+.h-principle-body h4 { margin: 0 0 0.3rem; font-size: 0.97rem; }
+.h-principle-body p  { margin: 0; font-size: 0.87rem; color: #475569; line-height: 1.5; }
+
+/* --- Tácticas grid --- */
+.nego-tactics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.nego-tactic-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.tactic-name { font-weight: 700; font-size: 0.97rem; margin-bottom: 0.5rem; }
+.nego-tactic-card p { font-size: 0.87rem; color: #475569; margin: 0 0 0.5rem; line-height: 1.5; }
+.tactic-counter {
+  font-size: 0.82rem;
+  background: #f1f5f9;
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  color: #334155;
+}
+
+/* --- Cierres grid --- */
+.nego-closing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0;
+}
+.nego-closing-card {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: 0.6rem;
+  padding: 0.9rem;
+}
+.closing-name { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
+.nego-closing-card p { margin: 0; font-size: 0.86rem; color: #166534; line-height: 1.5; }
+
+/* --- Comunicación no verbal --- */
+.nego-nonverbal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.nego-nv-category {
+  background: #faf5ff;
+  border: 1px solid #d8b4fe;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+.nego-nv-category h4 { margin: 0 0 0.6rem; font-size: 0.95rem; }
+.nego-nv-category ul { margin: 0; padding-left: 1.1rem; }
+.nego-nv-category li { font-size: 0.85rem; margin-bottom: 0.4rem; line-height: 1.5; }
+
+/* --- Objeciones grid --- */
+.nego-objections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.nego-obj-card {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  border: 1.5px solid;
+}
+.obj-type { font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem; }
+.obj-real { font-size: 0.82rem; color: #64748b; margin-bottom: 0.6rem; font-style: italic; }
+.nego-obj-card p { margin: 0; font-size: 0.86rem; line-height: 1.5; }
+.obj-price     { background: #fff7ed; border-color: #fdba74; }
+.obj-time      { background: #eff6ff; border-color: #93c5fd; }
+.obj-authority { background: #faf5ff; border-color: #c4b5fd; }
+.obj-competitor{ background: #f0fdf4; border-color: #86efac; }
+.obj-doubt     { background: #fefce8; border-color: #fde047; }
+
+/* --- Negociación situaciones difíciles --- */
+.nego-power-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.nego-power-card {
+  border-radius: 0.6rem;
+  padding: 1.1rem;
+  border: 1.5px solid;
+}
+.nego-power-card h4 { margin: 0 0 0.6rem; font-size: 0.97rem; }
+.nego-power-card ul { margin: 0; padding-left: 1.2rem; }
+.nego-power-card li { font-size: 0.86rem; margin-bottom: 0.4rem; line-height: 1.5; }
+.power-weak   { background: #fff7ed; border-color: #fdba74; }
+.power-strong { background: #f0fdf4; border-color: #86efac; }
+
+/* --- Canales de negociación --- */
+.nego-channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.nego-channel-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.7rem;
+  padding: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.chan-icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+.nego-channel-card h4 { margin: 0 0 0.5rem; font-size: 0.97rem; }
+.nego-channel-card p  { margin: 0 0 0.5rem; font-size: 0.85rem; color: #475569; line-height: 1.5; }
+.chan-presencial { border-top: 4px solid #3b82f6; }
+.chan-telefono   { border-top: 4px solid #8b5cf6; }
+.chan-video      { border-top: 4px solid #10b981; }
+.chan-escrito    { border-top: 4px solid #f59e0b; }
+
+/* --- Ética --- */
+.nego-ethics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.nego-ethics-card {
+  border-radius: 0.6rem;
+  padding: 1.1rem;
+  border: 1.5px solid;
+}
+.ethics-header {
+  font-weight: 700;
+  font-size: 0.97rem;
+  margin-bottom: 0.7rem;
+}
+.nego-ethics-card ul { margin: 0; padding-left: 1.2rem; }
+.nego-ethics-card li { font-size: 0.86rem; margin-bottom: 0.4rem; line-height: 1.5; }
+.ethics-ok  { background: #f0fdf4; border-color: #86efac; }
+.ethics-nok { background: #fff1f2; border-color: #fca5a5; }
+
+/* --- Síntesis cards Tema19 --- */
+.nego-summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.nego-summary-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.7rem;
+  padding: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  border-top: 4px solid var(--primary-color, #2563eb);
+  text-align: center;
+}
+.nego-summary-card .summary-icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+.nego-summary-card h4 { margin: 0 0 0.4rem; font-size: 0.97rem; }
+.nego-summary-card p  { margin: 0; font-size: 0.86rem; color: #475569; line-height: 1.6; }
+
+/* --- Responsive Tema19 --- */
+@media (max-width: 768px) {
+  .nego-comparison-grid,
+  .nego-power-grid,
+  .nego-ethics-grid { grid-template-columns: 1fr; }
+  .nego-styles-grid,
+  .nego-tactics-grid,
+  .nego-closing-grid,
+  .nego-nonverbal-grid,
+  .nego-objections-grid,
+  .nego-channels-grid,
+  .nego-contexts-grid,
+  .nego-summary-cards { grid-template-columns: 1fr; }
+  .harvard-principle { flex-direction: column; gap: 0.4rem; }
+  .nego-phase-step   { flex-direction: column; gap: 0.4rem; }
+  .zopa-bar          { flex-direction: column; align-items: flex-start; }
+}
+
+/* ============================================================
+   TEMA 20 — TÉCNICAS DE VENTA DIRECTA
+   ============================================================ */
+
+/* --- Fases de la venta directa --- */
+.venta-fases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.venta-fase-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.7rem;
+  padding: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fase-num {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary-color, #2563eb);
+  margin-bottom: 0.2rem;
+}
+.fase-title {
+  font-weight: 700;
+  font-size: 0.97rem;
+  margin-bottom: 0.3rem;
+}
+.fase-desc {
+  font-size: 0.87rem;
+  color: #475569;
+  line-height: 1.5;
+}
+.fase-prospeccion { border-left: 4px solid #3b82f6; }
+.fase-contacto    { border-left: 4px solid #8b5cf6; }
+.fase-sondeo      { border-left: 4px solid #f59e0b; }
+.fase-presentacion{ border-left: 4px solid #10b981; }
+.fase-objeciones  { border-left: 4px solid #ef4444; }
+.fase-cierre      { border-left: 4px solid #fca5a5; }
+.fase-postventa   { border-left: 4px solid #86efac; }
+
+/* --- Responsive Tema20 --- */
+@media (max-width: 768px) {
+  .venta-fases-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   TEMA 0 — ERRORES CRÍTICOS EN ATENCIÓN AL CLIENTE
+   ============================================================ */
+
+/* --- Error Functions Grid (Why start with errors) --- */
+.error-functions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.3rem;
+  margin: 1.5rem 0;
+}
+.error-func-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
+  border: 2px solid #e2e8f0;
+  border-radius: 0.9rem;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+.error-func-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.error-func-card .func-icon {
+  font-size: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  background: rgba(255,255,255,0.7);
+}
+.error-func-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+.error-func-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+}
+.func-normalize { border-left: 4px solid #10b981; }
+.func-system    { border-left: 4px solid #3b82f6; }
+.func-lab       { border-left: 4px solid #f59e0b; }
+
+/* --- Errors Grid (12 critical errors) --- */
+.errors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.error-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.8rem;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.error-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.error-card .error-num {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  opacity: 0.15;
+}
+.error-card .error-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e293b;
+  margin-top: 0.3rem;
+}
+.error-card .error-desc p {
+  margin: 0.4rem 0;
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.5;
+}
+.error-card .error-desc p strong {
+  color: #1e293b;
+}
+/* Error color variants */
+.error-1 { border-left: 4px solid #3b82f6; }
+.error-2 { border-left: 4px solid #ef4444; }
+.error-3 { border-left: 4px solid #f59e0b; }
+.error-4 { border-left: 4px solid #8b5cf6; }
+.error-5 { border-left: 4px solid #ec4899; }
+.error-6 { border-left: 4px solid #06b6d4; }
+.error-7 { border-left: 4px solid #10b981; }
+.error-8 { border-left: 4px solid #f97316; }
+.error-9 { border-left: 4px solid #a855f7; }
+.error-10 { border-left: 4px solid #14b8a6; }
+.error-11 { border-left: 4px solid #d97706; }
+.error-12 { border-left: 4px solid #0ea5e9; }
+
+/* --- Diagnosis Matrix --- */
+.diagnosis-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+.diagnosis-level {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  border-top: 3px solid #3b82f6;
+}
+.diagnosis-level h4 {
+  margin: 0 0 0.8rem 0;
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+.diagnosis-level ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.diagnosis-level li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* --- Case Study (already in global, specializing for Tema00) --- */
+.case-study {
+  background: #f8fafc;
+  border-left: 4px solid #3b82f6;
+  border-radius: 0.7rem;
+  padding: 1.2rem;
+  margin: 1rem 0;
+}
+.case-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+.case-icon {
+  font-size: 1.4rem;
+}
+.case-header span:last-child {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1rem;
+}
+.case-study p {
+  margin: 0.6rem 0;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* --- Self Assessment List --- */
+.self-assessment-list {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.7rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  margin: 1rem 0;
+}
+.self-assessment-list li {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #1e293b;
+  line-height: 1.6;
+}
+.self-assessment-list li strong {
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+/* --- Summary Cards (already in global, adapting for final section) --- */
+/* Uses existing .summary-cards and .summary-card styles */
+
+/* --- Responsive Tema00 --- */
+@media (max-width: 768px) {
+  .error-functions-grid { grid-template-columns: 1fr; }
+  .errors-grid { grid-template-columns: 1fr; }
+  .diagnosis-matrix { grid-template-columns: 1fr; }
+  .error-card .error-num { font-size: 1.4rem; }
 }
