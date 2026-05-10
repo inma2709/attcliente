@@ -1,10 +1,45 @@
+      {/* ============================= */}
+      {/* SECCIÓN 7: La ética en ventas – UA */}
+      {/* ============================= */}
+      <section className="topic-section">
+        <div className="topic-section__title">
+          <h2>7. La ética en ventas: vender con integridad y honestidad</h2>
+          <span className="topic-section__meta">Basado en <a href="https://expertodireccionventas.ua.es/la-etica-en-ventas-como-vender-con-integridad-y-honestidad/" target="_blank" rel="noopener noreferrer">Universidad de Alicante</a></span>
+        </div>
+        <div className="card card--muted">
+          <h3>Resumen y puntos clave</h3>
+          <ul>
+            <li><strong>¿Qué es la ética en ventas?</strong> Actuar con honestidad, integridad y responsabilidad en todas las interacciones. No engañar, presionar ni manipular, sino informar con claridad y transparencia.</li>
+            <li><strong>Construir confianza:</strong> La confianza es la base de la relación comercial. Se logra con honestidad, cumplimiento de promesas, respeto a la privacidad y evitando prácticas agresivas.</li>
+            <li><strong>Beneficios de la ética en ventas:</strong> Fidelización, reputación positiva, mayor satisfacción del cliente y reducción de conflictos.</li>
+            <li><strong>Cómo fomentar una cultura ética:</strong> Formación en valores, establecer metas realistas y reconocer a quienes actúan con integridad.</li>
+            <li><strong>Conclusión:</strong> La ética en ventas es esencial para el éxito sostenible. Vender con integridad beneficia a clientes, empresa y sociedad, y genera una ventaja competitiva real.</li>
+          </ul>
+        </div>
+        <div className="callout callout--tip">
+          <h4 className="callout-title">📝 Para reflexionar</h4>
+          <p>
+            ¿Has vivido o presenciado alguna vez una venta poco ética? ¿Cómo afectó a tu confianza en la empresa? ¿Qué harías diferente como profesional?
+          </p>
+          </div>
+          <div className="callout callout--activity" style={{marginTop: '1.5em'}}>
+            <h4 className="callout-title">💬 Debate: Ética vs. Objetivos</h4>
+            <ul>
+              <li>¿Dónde crees que está el límite entre actuar éticamente y cumplir los objetivos que te exige la empresa?</li>
+              <li>¿Qué consecuencias puede tener para un profesional negarse a realizar prácticas poco éticas, aunque eso implique no alcanzar los objetivos?</li>
+              <li>¿Cómo afectan las presiones comerciales a la toma de decisiones éticas en el día a día?</li>
+              <li>¿Es posible mantener la integridad personal en un entorno de alta presión comercial? ¿Qué estrategias propondrías?</li>
+              <li>¿Crees que las empresas deberían priorizar la ética sobre los resultados a corto plazo? ¿Por qué?</li>
+            </ul>
+          </div>
+        </section>
 import TopicLayout from "../../components/TopicLayout";
 
 const Tema16 = () => {
   // Vídeos relacionados (YouTube)
-  const VIDEO_ETICA_ATENCION = "6ZVZK7pLz2k"; // Ética y valores en atención al cliente
-  const VIDEO_DIVERSIDAD_INCLUSION = "L5JZ9KX1q7Y"; // Atención inclusiva y diversidad
-  const VIDEO_NO_DISCRIMINACION = "kqF8vKzj1yA"; // Trato respetuoso y no discriminación
+  const VIDEO_ETICA_ATENCION = "wTC6pXVciRY"; // Principios éticos en atención al cliente
+  const VIDEO_DIVERSIDAD_INCLUSION = "rR1yTtO-edg"; // Prácticas inclusivas
+  const VIDEO_NO_DISCRIMINACION = "ptwCKGvJOYE"; // No discriminación
 
   return (
     <TopicLayout
@@ -240,7 +275,43 @@ const Tema16 = () => {
             <li>¿Qué consecuencias puede tener una mala gestión ética de esta situación?</li>
           </ol>
         </div>
-      </section>
+        </section>
+
+        {/* ============================= */}
+        {/* SECCIÓN 6: Debate Ética vs Objetivos */}
+        {/* ============================= */}
+        <section className="topic-section">
+          <div className="topic-section__title">
+            <h2>6. Debate: Ética personal vs. Objetivos empresariales</h2>
+            <span className="topic-section__meta">Dilemas reales en la atención al cliente</span>
+          </div>
+
+          <div className="debate">
+            <div className="debate-prompt">
+              Imagina que trabajas en una empresa donde los objetivos comerciales (ventas, tiempos de respuesta, retención) son muy exigentes.<br />
+              Sin embargo, como profesional, tienes claro que la ética y el trato justo al cliente son irrenunciables.<br />
+              <strong>¿Qué harías si tu jefe te exige priorizar el cumplimiento de objetivos aunque implique actuar en contra de tus valores éticos?</strong>
+            </div>
+            <ol className="debate-questions">
+              <li>¿Hasta dónde es aceptable "seguir órdenes" si van en contra de la ética profesional?</li>
+              <li>¿Qué riesgos existen para la empresa y para ti si decides actuar éticamente aunque incumplas objetivos?</li>
+              <li>¿Cómo se puede negociar o argumentar ante la dirección para defender la ética sin perder el empleo?</li>
+            </ol>
+          </div>
+
+          <div className="card card--muted" style={{marginTop: '1.5em'}}>
+            <h3>Ejemplos reales de dilemas éticos</h3>
+            <ul>
+              <li><strong>Venta de productos innecesarios:</strong> Bancos que presionan para vender seguros o productos financieros a clientes que no los necesitan, solo para cumplir objetivos.</li>
+              <li><strong>Ocultar información relevante:</strong> Empresas de telecomunicaciones que no informan de penalizaciones por baja anticipada para evitar perder una venta.</li>
+              <li><strong>Atención "exprés":</strong> Call centers que exigen cerrar llamadas en menos de 3 minutos, aunque el cliente no haya resuelto su problema.</li>
+              <li><strong>Manipulación de encuestas:</strong> Pedir al cliente que valore con la máxima puntuación bajo presión, para no afectar los indicadores del agente.</li>
+              <li><strong>Negativa a gestionar reclamaciones:</strong> Instrucciones de "no tramitar" ciertas quejas para no aumentar estadísticas negativas.</li>
+            </ul>
+          </div>
+
+        </section>
+      {/* Cierre correcto de TopicLayout y componente */}
     </TopicLayout>
   );
 };

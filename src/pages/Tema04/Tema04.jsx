@@ -6,22 +6,46 @@ const Tema04 = () => {
 
   return (
     <>
+
       <TopicLayout
         numero="04"
         title="Calidad y oportunidad en el servicio al cliente"
         intro="Excelencia en el servicio, valor estratégico para la supervivencia del negocio, estándares de calidad y consecuencias reales de una mala atención."
         icon="⭐"
-       
       />
-       <figure className="media">
-          <img
-            src="/t4.png"
-            alt="Mala atención al cliente"
-          />
-          <figcaption>
-            Personalizar no es “ser simpático”: es <strong>adaptar</strong> mensaje, canal y solución al perfil del cliente.
-          </figcaption>
-        </figure>
+
+      {/* ============================= */}
+      {/* INTRODUCCIÓN: SERVICIO vs EXPERIENCIA */}
+      {/* ============================= */}
+      <section className="topic-section" style={{marginBottom: '2.2em'}}>
+        <div className="topic-section__title">
+          <h2>¿Servicio o experiencia del cliente?</h2>
+        </div>
+        <p>
+          En la actualidad, la diferencia entre ofrecer un simple <strong>servicio</strong> y crear una verdadera <strong>experiencia del cliente</strong> es clave para la competitividad de cualquier organización. El servicio se centra en cumplir con lo prometido, pero la experiencia abarca emociones, percepciones y recuerdos que el cliente asocia a cada interacción. Comprender y gestionar esta diferencia es fundamental para lograr la excelencia y la fidelización.
+        </p>
+        <div className="video-block" style={{margin: '1.5em 0'}}>
+          <div className="video-title">🎥 Conoce la diferencia entre SERVICIO y EXPERIENCIA del Cliente</div>
+          <div className="video-meta">Video introductorio para reflexionar sobre el valor añadido de una experiencia memorable frente a un servicio básico.</div>
+          <div className="embed">
+            <iframe
+              src="https://www.youtube.com/embed/BvO2wWXEBnM"
+              title="Conoce la diferencia entre SERVICIO y EXPERIENCIA del Cliente"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
+      <figure className="media">
+        <img
+          src="/t4.png"
+          alt="Mala atención al cliente"
+        />
+        <figcaption>
+          Personalizar no es “ser simpático”: es <strong>adaptar</strong> mensaje, canal y solución al perfil del cliente.
+        </figcaption>
+      </figure>
 
    {/* =========================
     SECCIONES 0–4 · REORGANIZADAS CON <details>/<summary> (AMPLIADAS)
@@ -299,23 +323,39 @@ const Tema04 = () => {
                 Por eso, los estándares deben cubrir tanto la parte técnica como la parte humana.
               </p>
 
-              <ul className="checklist">
-                <li>
-                  <strong>Fiabilidad:</strong> coherencia en la información y cumplimiento de lo prometido.
-                </li>
-                <li>
-                  <strong>Rapidez y oportunidad:</strong> tiempos razonables y respuesta dentro del momento crítico.
-                </li>
-                <li>
-                  <strong>Claridad:</strong> pasos comprensibles, sin tecnicismos innecesarios ni ambigüedad.
-                </li>
-                <li>
-                  <strong>Empatía y respeto:</strong> reconocer el impacto, cuidar el tono y evitar culpar al cliente.
-                </li>
-                <li>
-                  <strong>Seguridad:</strong> confirmar por escrito cuando procede, dejar constancia y dar plazos.
-                </li>
-              </ul>
+              <div style={{ 
+                display: 'grid', 
+                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                gap: '1.5rem',
+                marginBottom: '1.5rem',
+                marginTop: '1.5rem'
+              }}>
+                <div style={{ padding: '1.5rem', borderRadius: '8px', backgroundColor: '#f0fdf4', borderLeft: '4px solid #10b981', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
+                  <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>✓</div>
+                  <h4 style={{ margin: '0.5rem 0 1rem 0', fontSize: '1.05em', color: '#166534', fontWeight: '600' }}>Fiabilidad</h4>
+                  <p style={{ margin: 0, color: '#666', fontSize: '0.95em', lineHeight: '1.6' }}>Coherencia en la información y cumplimiento de lo prometido.</p>
+                </div>
+                <div style={{ padding: '1.5rem', borderRadius: '8px', backgroundColor: '#fef3c7', borderLeft: '4px solid #f59e0b', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
+                  <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>⚡</div>
+                  <h4 style={{ margin: '0.5rem 0 1rem 0', fontSize: '1.05em', color: '#92400e', fontWeight: '600' }}>Rapidez y Oportunidad</h4>
+                  <p style={{ margin: 0, color: '#666', fontSize: '0.95em', lineHeight: '1.6' }}>Tiempos razonables y respuesta dentro del momento crítico.</p>
+                </div>
+                <div style={{ padding: '1.5rem', borderRadius: '8px', backgroundColor: '#dbeafe', borderLeft: '4px solid #0ea5e9', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
+                  <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>📝</div>
+                  <h4 style={{ margin: '0.5rem 0 1rem 0', fontSize: '1.05em', color: '#0c4a6e', fontWeight: '600' }}>Claridad</h4>
+                  <p style={{ margin: 0, color: '#666', fontSize: '0.95em', lineHeight: '1.6' }}>Pasos comprensibles, sin tecnicismos innecesarios ni ambigüedad.</p>
+                </div>
+                <div style={{ padding: '1.5rem', borderRadius: '8px', backgroundColor: '#fce7f3', borderLeft: '4px solid #ec4899', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
+                  <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>🤝</div>
+                  <h4 style={{ margin: '0.5rem 0 1rem 0', fontSize: '1.05em', color: '#831843', fontWeight: '600' }}>Empatía y Respeto</h4>
+                  <p style={{ margin: 0, color: '#666', fontSize: '0.95em', lineHeight: '1.6' }}>Reconocer el impacto, cuidar el tono y evitar culpar al cliente.</p>
+                </div>
+                <div style={{ padding: '1.5rem', borderRadius: '8px', backgroundColor: '#f5f3ff', borderLeft: '4px solid #8b5cf6', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
+                  <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>🔒</div>
+                  <h4 style={{ margin: '0.5rem 0 1rem 0', fontSize: '1.05em', color: '#5b21b6', fontWeight: '600' }}>Seguridad</h4>
+                  <p style={{ margin: 0, color: '#666', fontSize: '0.95em', lineHeight: '1.6' }}>Confirmar por escrito cuando procede, dejar constancia y dar plazos.</p>
+                </div>
+              </div>
 
               <div className="callout callout--example">
                 <h4 className="callout-title">🎯 Ejemplo</h4>
@@ -671,6 +711,53 @@ const Tema04 = () => {
           </p>
         </div>
       </section>
+
+        {/* =============================== */}
+        {/* RESUMEN FINAL Y ACTIVIDADES */}
+        {/* =============================== */}
+        <section className="topic-section">
+          <div className="topic-section__title">
+            <h2>Resumen del Tema 4: Calidad y Oportunidad en el Servicio al Cliente</h2>
+          </div>
+          <div className="card card--muted">
+            <h3>🔎 Síntesis</h3>
+            <ul style={{marginBottom: '1.2em'}}>
+              <li>La <strong>calidad en el servicio</strong> es un factor estratégico que sostiene la confianza y la fidelidad del cliente.</li>
+              <li>El cliente no solo evalúa el resultado, sino <strong>cómo</strong> fue atendido: rapidez, claridad, empatía y seguridad son dimensiones clave.</li>
+              <li>La <strong>excelencia</strong> se basa en superar expectativas, estandarizar procesos y medir para mejorar.</li>
+              <li>Una mala atención genera un efecto dominó: pérdida de clientes, reputación y eficiencia interna.</li>
+              <li>Invertir en calidad y oportunidad no es un coste, sino una <strong>protección del negocio</strong> y una ventaja competitiva.</li>
+            </ul>
+          </div>
+
+          <div className="callout callout--activity">
+            <h4 className="callout-title">📝 Actividad 1: Reflexión inicial</h4>
+            <p>
+              Piensa en una experiencia reciente como cliente en la que sentiste que la atención fue excelente o deficiente. ¿Qué dimensión de calidad (fiabilidad, rapidez, claridad, empatía, seguridad) fue la más determinante en tu percepción? Explica por qué.
+            </p>
+          </div>
+
+          <div className="callout callout--activity">
+            <h4 className="callout-title">🎨 Actividad 2: Infografía Canva</h4>
+            <p>
+              En grupos, diseñad una infografía en Canva que resuma las <strong>5 dimensiones de calidad</strong> en la atención al cliente. Incluid ejemplos reales y consejos prácticos para cada dimensión.
+            </p>
+          </div>
+
+          <div className="callout callout--activity">
+            <h4 className="callout-title">🤝 Actividad 3: Role-play de atención</h4>
+            <p>
+              Por parejas, simulad una situación de atención al cliente (por ejemplo, una queja o una solicitud de información). Uno actúa como cliente y otro como agente. El objetivo es aplicar los estándares de calidad y recibir feedback del grupo sobre las dimensiones observadas.
+            </p>
+          </div>
+
+          <div className="callout callout--activity">
+            <h4 className="callout-title">💬 Actividad 4: Debate guiado</h4>
+            <p>
+              ¿Crees que la calidad en el servicio es más importante que el precio en la decisión de compra? Argumenta tu postura con ejemplos y datos. El profesor moderará el debate para asegurar la participación de todos.
+            </p>
+          </div>
+        </section>
     </>
   );
 };

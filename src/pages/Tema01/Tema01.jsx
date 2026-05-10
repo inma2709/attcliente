@@ -141,6 +141,53 @@ export default function Tema01() {
       image={image}
     >
       {/* =====================================================
+          ACTIVIDAD INICIAL
+      ====================================================== */}
+      <section className="topic-section" style={{ backgroundColor: '#f0f4ff', padding: '2rem', borderRadius: '12px', borderLeft: '4px solid #4f46e5', marginBottom: '2rem' }}>
+        <h2 style={{ color: '#4f46e5' }}>🎯 Actividad Inicial: Preguntas que Responderemos Juntos</h2>
+        <p style={{ fontSize: '1rem', color: '#666', marginBottom: '1.5rem' }}>
+          <em>Antes de continuar, plantéate estas preguntas sobre cómo funcionan las organizaciones. No hay respuestas "correctas"—solo tu perspectiva actual. Volveremos a ellas al final del tema.</em>
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #ec4899' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 1: La Información Como Poder</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>¿Realmente todos en tu empresa tienen acceso a la información que necesitan para servir bien al cliente? ¿Qué información falta?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: Un empleado de primera línea que no sabe qué decidió la dirección sobre política de devoluciones no puede ser excelente.</p>
+          </div>
+
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #f59e0b' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 2: El Organigrama Real</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>¿Sabes exactamente cuál es tu posición en el organigrama? ¿A quién le reportas de verdad (no en papel, sino en la práctica)?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: A veces los organigramas oficiales no reflejan cómo realmente funciona la empresa.</p>
+          </div>
+
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #10b981' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 3: Comunicación Ascendente</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>¿Tu empresa escucha realmente lo que dices desde la primera línea? ¿Se actúa sobre tus observaciones?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: Si sugieres mejora y nadie responde, la comunicación ascendente está rota.</p>
+          </div>
+
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #0ea5e9' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 4: El Rol del CRM</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>¿Utilizas alguna herramienta (CRM, software, base de datos) para gestionar la relación con clientes? ¿Te ayuda realmente?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: Un CRM es solo tan bueno como los datos que pones en él y cómo de accesible es.</p>
+          </div>
+
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #8b5cf6' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 5: Flujo de Trabajo Ideal</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>Si tuvieras poder para rediseñar el flujo de trabajo en tu empresa, ¿qué cambiarías para mejorar la atención al cliente?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: Piensa en lo que te frena hoy: falta de información, procesos lentos, falta de autoridad, etc.</p>
+          </div>
+        </div>
+
+        <div style={{ marginTop: '1.5rem', backgroundColor: '#ecfdf5', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #10b981' }}>
+          <p style={{ marginBottom: 0, fontWeight: 'bold' }}>📝 Tu Tarea Ahora:</p>
+          <p style={{ marginBottom: 0, color: '#666' }}>Anota tus respuestas en un documento (word, note, o papel). Serán tu "foto instantánea" de tu perspectiva HOY. Al final del tema, volveremos a estas preguntas y verás cómo ha evolucionado tu comprensión.</p>
+        </div>
+      </section>
+
+      {/* =====================================================
           TEORÍA (details/summary)
       ====================================================== */}
 
@@ -597,6 +644,209 @@ export default function Tema01() {
               su privacidad?
             </li>
           </ol>
+        </div>
+      </section>
+
+      {/* =====================================================
+          ACTIVIDADES PRÁCTICAS FINALES
+      ====================================================== */}
+      <section className="topic-section" style={{ marginBottom: '2rem', backgroundColor: '#fef3c7', padding: '2rem', borderRadius: '12px', borderLeft: '4px solid #f59e0b' }}>
+        <h2 style={{ color: '#d97706' }}>💼 ACTIVIDADES PRÁCTICAS: Diseña el Flujo de Trabajo Ideal</h2>
+        <p style={{ fontSize: '1rem', color: '#666', marginBottom: '2rem' }}>
+          Estas tres actividades te permitirán reimaginar cómo debería funcionar tu empresa para mejorar la atención al cliente. Cada una tiene un objetivo claro y un resultado mensurable.
+        </p>
+
+        {/* ACTIVIDAD 1: CANVA */}
+        <details style={{ marginBottom: '1.5rem', backgroundColor: '#ecfdf5', borderRadius: '8px', padding: '1rem', cursor: 'pointer' }}>
+          <summary style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#10b981', padding: '1rem', cursor: 'pointer' }}>
+            📊 Actividad 1: Infografía en Canva - "Mi Empresa Ideal para la Atención al Cliente"
+          </summary>
+          <div style={{ padding: '1.5rem', backgroundColor: '#fff', marginTop: '1rem', borderRadius: '8px' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              <strong>Objetivo:</strong> Responder visualmente las 5 preguntas iniciales y crear un documento que muestre tu "empresa ideal" para fomentar la excelencia en atención al cliente.
+            </p>
+
+            <div style={{ backgroundColor: '#f0fdf4', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #10b981', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '1rem' }}>📋 ¿Qué debes hacer?</p>
+              <ol style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+                <li style={{ marginBottom: '0.8rem' }}>Abre <strong>Canva</strong> (versión gratuita es suficiente)</li>
+                <li style={{ marginBottom: '0.8rem' }}>Elige una plantilla de <strong>infografía, póster o presentación</strong></li>
+                <li style={{ marginBottom: '0.8rem' }}>Responde estas 5 preguntas de forma visual:
+                  <ul style={{ marginTop: '0.5rem', marginLeft: '1rem' }}>
+                    <li>¿Qué información falta en tu empresa para mejorar la atención?</li>
+                    <li>¿Cómo es realmente tu organigrama vs. cómo debería ser?</li>
+                    <li>¿Cómo mejorar la comunicación ascendente?</li>
+                    <li>¿Qué role juega el CRM en tu empresa ideal?</li>
+                    <li>¿Qué cambiarías en el flujo de trabajo?</li>
+                  </ul>
+                </li>
+                <li style={{ marginBottom: '0.8rem' }}>Incluye <strong>iconos, colores y ejemplos reales</strong> de mejoras organizativas</li>
+                <li style={{ marginBottom: '0.8rem' }}>Guarda como PDF y comparte con el formador</li>
+              </ol>
+            </div>
+
+            <div style={{ backgroundColor: '#dbeafe', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid #0ea5e9' }}>
+              <p style={{ marginBottom: 0 }}>
+                <strong>⏱️ Tiempo estimado:</strong> 45-60 minutos | <strong>Entrega:</strong> PDF con 5 respuestas visuales sobre tu empresa ideal
+              </p>
+            </div>
+          </div>
+        </details>
+
+        {/* ACTIVIDAD 2: EJERCICIO POR PAREJAS */}
+        <details style={{ marginBottom: '1.5rem', backgroundColor: '#fdf2f8', borderRadius: '8px', padding: '1rem', cursor: 'pointer' }}>
+          <summary style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#ec4899', padding: '1rem', cursor: 'pointer' }}>
+            👥 Actividad 2: Ejercicio por Parejas - "Rediseña un Flujo de Trabajo"
+          </summary>
+          <div style={{ padding: '1.5rem', backgroundColor: '#fff', marginTop: '1rem', borderRadius: '8px' }}>
+            <p style={{ marginBottom: '1.5rem' }}>
+              <strong>Objetivo:</strong> Por parejas, identificar un flujo de trabajo problemático en atención al cliente y proponer una solución organizativa.
+            </p>
+
+            <div style={{ backgroundColor: '#fef3c7', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #f59e0b', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '1.5rem' }}>🔄 Dinámica del Ejercicio</p>
+              
+              <div style={{ marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#d97706', marginBottom: '0.8rem' }}>📌 FASE 1: Identificar el Problema (10 minutos)</p>
+                <p style={{ color: '#666', marginBottom: '0.8rem' }}>Cada pareja elige un <strong>flujo de trabajo problemático</strong> real:</p>
+                <ul style={{ marginLeft: '1.5rem', lineHeight: '1.8', fontSize: '0.95em' }}>
+                  <li><strong>Ejemplo 1:</strong> Un cliente se queja en email pero nadie lo ve porque no está en el CRM. Se pierde su información.</li>
+                  <li><strong>Ejemplo 2:</strong> El agente sabe la solución pero no tiene autoridad para aplicarla. Debe esperar al jefe.</li>
+                  <li><strong>Ejemplo 3:</strong> Falta comunicación entre ventas y posventa. El cliente se siente "perdido" tras la compra.</li>
+                  <li><strong>Ejemplo 4:</strong> Información duplicada en múltiples sistemas. Nadie sabe cuál es la versión actualizada.</li>
+                  <li><strong>Ejemplo 5:</strong> No hay protocolo claro sobre quién comunica al cliente. Todos asumen que otro lo hace.</li>
+                </ul>
+              </div>
+
+              <div style={{ marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#d97706', marginBottom: '0.8rem' }}>💡 FASE 2: Analizar la Causa Raíz (10 minutos)</p>
+                <p style={{ color: '#666' }}>Para cada problema, preguntarse:</p>
+                <ul style={{ marginLeft: '1.5rem', lineHeight: '1.8', fontSize: '0.95em' }}>
+                  <li>¿Falta información? (comunicación ascendente ruptura)</li>
+                  <li>¿Falta estructura? (organigrama confuso)</li>
+                  <li>¿Falta tecnología? (CRM deficiente)</li>
+                  <li>¿Falta liderazgo? (dirección desconectada)</li>
+                </ul>
+              </div>
+
+              <div style={{ marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#d97706', marginBottom: '0.8rem' }}>🔨 FASE 3: Proponer Solución Organizativa (10 minutos)</p>
+                <p style={{ color: '#666', marginBottom: '0.8rem' }}>Rediseñar el flujo de trabajo. Pueden incluir:</p>
+                <ul style={{ marginLeft: '1.5rem', lineHeight: '1.8', fontSize: '0.95em' }}>
+                  <li>Cambio de responsabilidades (reorganizar roles)</li>
+                  <li>Nuevo protocolo de comunicación (qué información fluye dónde)</li>
+                  <li>Integración de herramientas (CRM + email + chat en un flujo)</li>
+                  <li>Delegación de autoridad (autorizar al agente a decide sin esperar jefe)</li>
+                  <li>Seguimiento automático (CRM que alerta si falta acción)</li>
+                </ul>
+              </div>
+
+              <div>
+                <p style={{ fontWeight: 'bold', color: '#d97706', marginBottom: '0.8rem' }}>📝 FASE 4: Presentación (5 minutos por pareja)</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>Cada pareja presenta:</p>
+                <ul style={{ marginLeft: '1.5rem', lineHeight: '1.8', fontSize: '0.95em' }}>
+                  <li>El problema real que identificaron</li>
+                  <li>La causa raíz</li>
+                  <li>Su propuesta de rediseño (puede ser visual: diagrama, lista, etc.)</li>
+                  <li>Impacto esperado en atención al cliente (ganancia concreta)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style={{ backgroundColor: '#dbeafe', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid #0ea5e9' }}>
+              <p style={{ marginBottom: 0 }}>
+                <strong>⏱️ Tiempo estimado:</strong> 35-40 minutos en clase | <strong>Resultado:</strong> Propuesta concreta de mejora organizativa con impacto en atención al cliente
+              </p>
+            </div>
+          </div>
+        </details>
+
+        {/* ACTIVIDAD 3: DEBATE */}
+        <details style={{ marginBottom: '1.5rem', backgroundColor: '#f5f3ff', borderRadius: '8px', padding: '1rem', cursor: 'pointer' }}>
+          <summary style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#8b5cf6', padding: '1rem', cursor: 'pointer' }}>
+            🎤 Actividad 3: Debate/Mesa Redonda - "¿Qué Actividades o Flujos de Trabajo Te Gustaría en Tu Empresa?"
+          </summary>
+          <div style={{ padding: '1.5rem', backgroundColor: '#fff', marginTop: '1rem', borderRadius: '8px' }}>
+            <p style={{ marginBottom: '1.5rem' }}>
+              <strong>Objetivo:</strong> Discutir en grupo qué elementos organizativos, procesos y herramientas son más valiosas para construir una empresa excelente en atención al cliente.
+            </p>
+
+            <div style={{ backgroundColor: '#fdf2f8', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #ec4899', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '1.5rem' }}>❓ Preguntas Abiertas (El Formador Elige 4-5)</p>
+              
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 1: La Reunión Ideal</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "¿Qué tipo de reuniones periódicas debería haber entre primera línea y dirección para mejorar la atención al cliente? ¿Cada cuánto? ¿Con qué agenda?"
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 2: Poder de Decisión</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "¿Qué decisiones debería poder tomar un agente de atención sin esperar aprobación? ¿Dónde deben estar los límites?"
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 3: Feedback Continuo</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "¿Cómo debería funcionar un sistema de feedback para que el agente aprenda de sus errores pero no se sienta perseguido?"
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 4: Herramientas Tecnológicas</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "¿Cuál es la herramienta más importante para mejorar atención al cliente: CRM robusto, software de comunicación integrado, o sistema de formación continua?"
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 5: Cultura vs. Estructura</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "¿Es más importante tener una estructura organizativa perfecta o una cultura empresarial que valore la excelencia? ¿Pueden coexistir?"
+                </p>
+              </div>
+
+              <div>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 6: Comunicación Horizontal</p>
+                <p style={{ color: '#666', fontSize: '0.95em', marginBottom: 0 }}>
+                  "¿Qué actividades o espacios de comunicación horizontal (entre compañeros de mismo nivel) mejorarían la coordinación en atención al cliente?"
+                </p>
+              </div>
+            </div>
+
+            <div style={{ backgroundColor: '#ecfdf5', padding: '1.5rem', borderRadius: '8px', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '1rem' }}>🎙️ Dinámica del Debate</p>
+              <ol style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+                <li>Formador plantea <strong>una pregunta</strong></li>
+                <li>Cada persona tiene <strong>máximo 1 minuto</strong> para dar su posición (si quiere intervenir)</li>
+                <li>Se abre <strong>discusión libre</strong> durante <strong>5-7 minutos</strong></li>
+                <li>Formador sintetiza los puntos clave: ¿qué sería realista implementar?</li>
+                <li>Se anotan las <strong>mejores ideas/insights en un documento compartido</strong> que se envía a empresa/jefe</li>
+              </ol>
+            </div>
+
+            <div style={{ backgroundColor: '#dbeafe', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid #0ea5e9' }}>
+              <p style={{ marginBottom: 0 }}>
+                <strong>⏱️ Tiempo estimado:</strong> 45-60 minutos | <strong>Resultado:</strong> Lista de propuestas reales para mejorar flujos de trabajo que pueden ser implementadas
+              </p>
+            </div>
+          </div>
+        </details>
+
+        {/* RESUMEN DE ACTIVIDADES */}
+        <div style={{ marginTop: '2rem', backgroundColor: '#ecfdf5', padding: '2rem', borderRadius: '12px', borderLeft: '4px solid #10b981' }}>
+          <p style={{ fontWeight: 'bold', marginBottom: '1rem', fontSize: '1.1em', color: '#10b981' }}>✅ Resumen: Tres Prácticas, Un Objetivo</p>
+          <ul style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+            <li><strong>Actividad 1 (Canva):</strong> Visión personal → Tu empresa ideal documentada visualmente</li>
+            <li><strong>Actividad 2 (Parejas):</strong> Problema real → Solución organizativa concreta</li>
+            <li><strong>Actividad 3 (Debate):</strong> Pensamiento estratégico → Ideas implementables que pueden llegar a dirección</li>
+          </ul>
+          <p style={{ marginTop: '1.5rem', marginBottom: 0, fontStyle: 'italic', color: '#666' }}>
+            Al final de estas tres actividades, habrás comprendido cómo la estructura, información y comunicación determinan la excelencia en atención al cliente, y tendrás un conjunto de propuestas concretas para mejorar en tu contexto.
+          </p>
         </div>
       </section>
 

@@ -115,123 +115,194 @@ const Home = () => {
 
       <section className="topic-section">
         <div className="topic-section__title">
+          <h2>🎯 Actividad Inicial: Preguntas de Apertura</h2>
+          <span className="topic-section__meta">Plantéate estas preguntas antes de comenzar. A lo largo del manual encontrarás las respuestas.</span>
+        </div>
+
+        <div className="callout callout--activity" style={{ backgroundColor: '#f0f4ff', borderLeft: '4px solid #4f46e5', padding: 'var(--space-4)' }}>
+          <div className="callout-title">❓ Preguntas de Reflexión para Resolver</div>
+          <p style={{ marginBottom: 'var(--space-3)', fontWeight: 'bold' }}>Antes de leer cada módulo, intenta responder estas preguntas. No hay respuestas "correctas"—se trata de tu perspectiva actual:</p>
+          
+          <ol style={{ marginLeft: 'var(--space-4)', lineHeight: '1.8' }}>
+            <li style={{ marginBottom: 'var(--space-2)' }}>
+              <strong>¿Qué diferencia existe entre un cliente satisfecho y un cliente leal?</strong>
+              <div style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                💡 Pista: La satisfacción es un sentimiento; la lealtad es una decisión.
+              </div>
+            </li>
+            <li style={{ marginBottom: 'var(--space-2)' }}>
+              <strong>¿Cómo se recupera una mala experiencia con el cliente?</strong>
+              <div style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                💡 Pista: No se trata solo de disculparse, sino de transformar la experiencia negativa.
+              </div>
+            </li>
+            <li style={{ marginBottom: 'var(--space-2)' }}>
+              <strong>¿Cuál es la verdadera diferencia entre "calidad" y "excelencia" en atención al cliente?</strong>
+              <div style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                💡 Pista: La calidad es cumplir lo prometido; la excelencia es superar expectativas.
+              </div>
+            </li>
+            <li style={{ marginBottom: 'var(--space-2)' }}>
+              <strong>¿Qué rol juega la inteligencia emocional en tu capacidad de atender a un cliente difícil?</strong>
+              <div style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                💡 Pista: Tu estado emocional es más determinante que las palabras que uses.
+              </div>
+            </li>
+            <li style={{ marginBottom: 'var(--space-2)' }}>
+              <strong>¿Cómo influyen los "momentos de verdad" en la percepción del cliente sobre la empresa?</strong>
+              <div style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                💡 Pista: Un solo momento crítico puede destruir años de buena relación o crear un apóstol incondicional.
+              </div>
+            </li>
+            <li style={{ marginBottom: 'var(--space-2)' }}>
+              <strong>¿Por qué la comunicación es el "sistema nervioso" de una empresa?</strong>
+              <div style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                💡 Pista: Sin información fluida, la empresa no puede reaccionar ni adaptarse.
+              </div>
+            </li>
+          </ol>
+
+          <div style={{ marginTop: 'var(--space-4)', padding: 'var(--space-3)', backgroundColor: '#fff', borderRadius: '8px', borderLeft: '4px solid #fbbf24' }}>
+            <p style={{ marginBottom: 'var(--space-2)' }}>
+              <strong>📝 Tu tarea:</strong> Registra tus respuestas iniciales. Al finalizar el manual, volverás a estas mismas preguntas 
+              y verás cómo tu comprensión ha evolucionado. Las respuestas que escribas hoy serán tu punto de partida.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="topic-section">
+        <div className="topic-section__title">
           <h2>Tu Viaje de Aprendizaje</h2>
-          <span className="topic-section__meta">9 pilares fundamentales que transformarán tu comprensión del servicio al cliente</span>
+          <span className="topic-section__meta">7 secciones estratégicas que transformarán tu comprensión del servicio al cliente</span>
         </div>
 
         <div className="topic-accordion">
           <details className="topic-details">
-            <summary>🏗️ El Cimiento: La Organización y su Flujo Vital</summary>
+            <summary>🏗️ Sección 1: Fundamentos de la Atención al Cliente</summary>
             <div className="topic-details__content">
               <p>
-                Toda empresa combina el factor humano, el capital y el entorno para alcanzar objetivos. Estudiaremos la
-                <strong>estructura jerárquica</strong> y los principios de especialización y autoridad.
+                El punto de partida es fundamental. Aprenderás los <strong>errores críticos</strong> a evitar, la 
+                <strong>estructura organizativa</strong> de la empresa, los principios de <strong>calidad y excelencia</strong>,
+                y los <strong>valores éticos</strong> que sustentan una atención respetuosa e inclusiva.
               </p>
-              <div className="callout callout--activity">
+              <ul style={{ marginTop: 'var(--space-2)' }}>
+                <li>Errores críticos en atención al cliente y cómo evitarlos</li>
+                <li>La organización empresarial y el proceso de información</li>
+                <li>Calidad y oportunidad en el servicio al cliente</li>
+                <li>Ética, Valores y Atención Inclusiva</li>
+              </ul>
+              <div className="callout callout--activity" style={{ marginTop: 'var(--space-3)' }}>
                 <div className="callout-title">🤔 Pregunta de reflexión</div>
-                <p>
-                  ¿Sabrías identificar a qué departamento perteneces
-                  en un organigrama y quiénes son tus superiores antes de empezar a trabajar?
-                </p>
+                <p>¿Conoces los valores de tu empresa y cómo se reflejan en cada interacción con el cliente?</p>
               </div>
             </div>
           </details>
 
           <details className="topic-details">
-            <summary>🧠 El Protagonista: Psicología y Tipología del Cliente</summary>
+            <summary>👥 Sección 2: Habilidades y Desarrollo del Profesional</summary>
             <div className="topic-details__content">
               <p>
-                El cliente es quien <strong>paga tu salario</strong>. Aprenderás a distinguir entre los <strong>apóstoles</strong>
-                (incondicionales), los <strong>mercenarios</strong> (buscadores de precio) y los peligrosos
-                <strong>terroristas</strong> (difunden malas experiencias).
+                Desarrollarás las <strong>competencias personales</strong> que te harán un profesional destacado: desde
+                la <strong>inteligencia emocional</strong> y el <strong>protocolo empresarial</strong> hasta la
+                <strong>comunicación presencial</strong> efectiva y la <strong>comunicación empresarial</strong> estratégica.
               </p>
-              <div className="callout callout--activity">
+              <ul style={{ marginTop: 'var(--space-2)' }}>
+                <li>Gestión emocional del profesional</li>
+                <li>Protocolo empresarial e imagen personal</li>
+                <li>Comunicación presencial y habilidades sociales</li>
+                <li>Fundamentos y flujos de la comunicación empresarial</li>
+              </ul>
+              <div className="callout callout--activity" style={{ marginTop: 'var(--space-3)' }}>
                 <div className="callout-title">🤔 Pregunta de reflexión</div>
-                <p>
-                  ¿Qué crees que hay detrás de un cliente que,
-                  sin motivo aparente, decide cambiar de marca tras años de relación?
-                </p>
+                <p>¿Qué haces hoy cuando algo te supera: reaccionas o respondes con profesionalismo?</p>
               </div>
             </div>
           </details>
 
           <details className="topic-details">
-            <summary>⭐ La Calidad como Estrategia de Supervivencia</summary>
+            <summary>🧠 Sección 3: Conocimiento del Cliente</summary>
             <div className="topic-details__content">
               <p>
-                Estudiaremos la <strong>calidad total</strong>. No se trata solo de cumplir lo prometido,
-                sino de alcanzar la <strong>excelencia empresarial</strong> anticipándote a las demandas
-                y dándole algo que no esperaba.
+                El cliente es el centro. Entenderás su <strong>psicología</strong>, aprenderás a <strong>detectar necesidades</strong>,
+                a evaluar su <strong>satisfacción</strong> y, lo más importante, a diseñar <strong>experiencias memorables</strong>
+                que transformen cada interacción en una oportunidad de fidelización.
               </p>
+              <ul style={{ marginTop: 'var(--space-2)' }}>
+                <li>Psicología y tipología del cliente</li>
+                <li>Detección de necesidades y evaluación de la satisfacción</li>
+                <li>El viaje del cliente (Customer Journey)</li>
+                <li>Experiencia de cliente memorable</li>
+              </ul>
+              <div className="callout callout--activity" style={{ marginTop: 'var(--space-3)' }}>
+                <div className="callout-title">🤔 Pregunta de reflexión</div>
+                <p>¿Qué "momento de verdad" te ha hecho recomendar una marca… o nunca volver a ella?</p>
+              </div>
             </div>
           </details>
 
           <details className="topic-details">
-            <summary>🗣️ Dominando los Canales de Comunicación</summary>
+            <summary>🗣️ Sección 4: Canales de Comunicación</summary>
             <div className="topic-details__content">
-              <p>Nos convertiremos en expertos en tres áreas críticas:</p>
-              <ul>
-                <li><strong>Presencial:</strong> Lenguaje no verbal, apariencia y protocolo</li>
-                <li><strong>Telefónica:</strong> Centralitas, cortesía verbal y gestión de esperas</li>
-                <li><strong>Virtual:</strong> Chats online, redes sociales y correo electrónico</li>
+              <p>
+                Dominarás <strong>todos los canales</strong> de contacto: <strong>telefónico, escrito, digital y telemático</strong>.
+                Cada canal tiene sus reglas, sus desafíos y sus oportunidades. Aprenderás a brillar en cada uno de ellos,
+                manteniendo siempre la <strong>confidencialidad y seguridad</strong> de la información.
+              </p>
+              <ul style={{ marginTop: 'var(--space-2)' }}>
+                <li>Comunicación telefónica y gestión de centralitas</li>
+                <li>Comunicación escrita y redacción de documentos</li>
+                <li>Uso de nuevas tecnologías y canales telemáticos</li>
+                <li>Protección de datos, seguridad y confidencialidad</li>
               </ul>
             </div>
           </details>
 
-         
-
           <details className="topic-details">
-            <summary>🤝 Conflictos, Reclamaciones y Fidelización</summary>
+            <summary>🤝 Sección 5: Técnicas Avanzadas de Venta y Negociación</summary>
             <div className="topic-details__content">
               <p>
-                El conflicto es una <strong>oportunidad de mejora</strong>. Estudiaremos técnicas de negociación, mediación
-                y el uso del <strong>CRM</strong> para crear relaciones duraderas.
+                Aprenderás <strong>técnicas profesionales</strong> para impulsar resultados: <strong>negociación efectiva</strong>
+                con clientes, estrategias de <strong>venta directa</strong> y cómo convertir cada conversación
+                en una oportunidad de valor agregado para el cliente y la empresa.
               </p>
+              <ul style={{ marginTop: 'var(--space-2)' }}>
+                <li>Técnicas de negociación con el cliente</li>
+                <li>Técnicas de venta directa</li>
+              </ul>
             </div>
           </details>
 
           <details className="topic-details">
-            <summary>🎯 La Experiencia del Cliente (CX): Lo que el Cliente Recuerda</summary>
+            <summary>⚖️ Sección 6: Gestión de Conflictos y Fidelización</summary>
             <div className="topic-details__content">
               <p>
-                La excelencia se decide en los <strong>momentos de verdad</strong>: esos instantes en los que el cliente evalúa si
-                la empresa cumple, sorprende o decepciona. Aprenderás a pensar en el <strong>Customer Journey</strong>
-                (viaje del cliente) y a gestionar <strong>expectativas vs. percepción</strong>.
+                El conflicto es una <strong>oportunidad de mejora</strong>. Estudiaremos cómo <strong>gestionar reclamaciones</strong>,
+                resolver conflictos con <strong>profesionalismo</strong> y transformar clientes insatisfechos en <strong>defensores de la marca</strong>
+                mediante el <strong>servicio posventa</strong> y la <strong>fidelización estratégica</strong>.
               </p>
-              <div className="callout callout--activity">
+              <ul style={{ marginTop: 'var(--space-2)' }}>
+                <li>Atención de quejas, reclamaciones y gestión de conflictos</li>
+                <li>Fidelización del cliente y servicio posventa</li>
+              </ul>
+              <div className="callout callout--activity" style={{ marginTop: 'var(--space-3)' }}>
                 <div className="callout-title">🤔 Pregunta de reflexión</div>
-                <p>¿Qué "momento de verdad" te ha hecho recomendar una marca… o no volver jamás?</p>
+                <p>¿Has tenido una reclamación mal gestionada? ¿Qué hubiera podido cambiar la experiencia?</p>
               </div>
             </div>
           </details>
 
           <details className="topic-details">
-            <summary>🧘 Gestión Emocional del Profesional: Rendimiento Bajo Presión</summary>
+            <summary>🤖 Sección 7: Especialización - Inteligencia Artificial en Atención al Cliente</summary>
             <div className="topic-details__content">
               <p>
-                Para atender con excelencia, primero debes dominar tu propio estado emocional. Veremos técnicas de
-                <strong>autocontrol</strong>, <strong>autorregulación</strong> y gestión del <strong>estrés</strong> para prevenir
-                el desgaste (burnout) y mantener una atención impecable incluso con clientes difíciles.
+                El futuro ya está aquí. Explora cómo la <strong>Inteligencia Artificial</strong> transforma la atención al cliente,
+                desde chatbots hasta análisis predictivo. El profesional del futuro no compite con la IA, sino que aprende
+                a <strong>trabajar junto a ella</strong>, maximizando eficiencia y humanidad.
               </p>
-              <div className="callout callout--activity">
+              <div className="callout callout--activity" style={{ marginTop: 'var(--space-3)' }}>
                 <div className="callout-title">🤔 Pregunta de reflexión</div>
-                <p>¿Qué haces hoy cuando algo te supera: reaccionas o respondes?</p>
-              </div>
-            </div>
-          </details>
-
-          <details className="topic-details">
-            <summary>⚖️ El Marco Legal, Ético e Inclusivo</summary>
-            <div className="topic-details__content">
-              <p>
-                Analizaremos las implicaciones del <strong>RGPD</strong>, aprendiendo a obtener el consentimiento de forma clara
-                y custodiar la información con medidas de seguridad robustas. Además, trabajaremos la
-                <strong>ética profesional</strong> y el <strong>trato inclusivo</strong>: respeto, no discriminación y atención a
-                colectivos vulnerables.
-              </p>
-              <div className="callout callout--activity">
-                <div className="callout-title">🤔 Pregunta de reflexión</div>
-                <p>¿Qué significa para ti "trato justo" cuando el cliente está alterado?</p>
+                <p>¿Cómo crees que la IA modificará tu rol en los próximos 5 años?</p>
               </div>
             </div>
           </details>
@@ -239,7 +310,7 @@ const Home = () => {
       </section>
 <section className="topic-section">
   <div className="topic-section__title">
-    <h2>Temario Completo - 17 Módulos</h2>
+    <h2>Temario Completo - 21 Módulos</h2>
     <span className="topic-section__meta">
       Cada módulo está diseñado para construir sobre el anterior, creando un conocimiento sólido, actual y aplicable
     </span>
@@ -249,7 +320,7 @@ const Home = () => {
     <span className="curriculum-number">00</span>
     <div className="curriculum-content">
       <h4>Errores críticos en atención al cliente y cómo evitarlos</h4>
-      <p>Identificación y prevención de fallos comunes en la atención al cliente </p>
+      <p>Identificación y prevención de fallos comunes en la atención al cliente</p>
     </div>
   </div>
 
@@ -302,18 +373,8 @@ const Home = () => {
       </div>
     </div>
 
-    {/* ✅ NUEVO: Gestión emocional como 07 */}
     <div className="curriculum-item">
       <span className="curriculum-number">07</span>
-      <div className="curriculum-content">
-        <h4>Gestión Emocional del Profesional</h4>
-        <p>Autocontrol, resiliencia, estrés y prevención del burnout</p>
-      </div>
-    </div>
-
-    {/* 🔁 Desplazamos a partir de aquí */}
-    <div className="curriculum-item">
-      <span className="curriculum-number">08</span>
       <div className="curriculum-content">
         <h4>Comunicación telefónica y gestión de centralitas</h4>
         <p>Pautas de cortesía, centralitas y manejo de situaciones difíciles</p>
@@ -321,7 +382,7 @@ const Home = () => {
     </div>
 
     <div className="curriculum-item">
-      <span className="curriculum-number">09</span>
+      <span className="curriculum-number">08</span>
       <div className="curriculum-content">
         <h4>Comunicación escrita y redacción de documentos</h4>
         <p>Cartas, informes, memorándums, actas y comunicación oficial</p>
@@ -329,10 +390,18 @@ const Home = () => {
     </div>
 
     <div className="curriculum-item">
-      <span className="curriculum-number">10</span>
+      <span className="curriculum-number">09</span>
       <div className="curriculum-content">
         <h4>Uso de nuevas tecnologías y canales telemáticos</h4>
         <p>Chat, email, redes sociales y asistencia virtual</p>
+      </div>
+    </div>
+
+    <div className="curriculum-item">
+      <span className="curriculum-number">10</span>
+      <div className="curriculum-content">
+        <h4>Gestión emocional del profesional</h4>
+        <p>Autocontrol, resiliencia, estrés y prevención del burnout</p>
       </div>
     </div>
 
@@ -383,6 +452,234 @@ const Home = () => {
         <p>Trato respetuoso, diversidad, no discriminación y coherencia corporativa</p>
       </div>
     </div>
+
+    <div className="curriculum-item">
+      <span className="curriculum-number">17</span>
+      <div className="curriculum-content">
+        <h4>Inteligencia Artificial en atención al cliente</h4>
+        <p>Chatbots, análisis predictivo y asistencia automatizada</p>
+      </div>
+    </div>
+
+    <div className="curriculum-item">
+      <span className="curriculum-number">18</span>
+      <div className="curriculum-content">
+        <h4>El viaje del cliente (Customer Journey)</h4>
+        <p>Mapeo de touchpoints, experiencia omnicanal y fidelización</p>
+      </div>
+    </div>
+
+    <div className="curriculum-item">
+      <span className="curriculum-number">19</span>
+      <div className="curriculum-content">
+        <h4>Técnicas de negociación con el cliente</h4>
+        <p>Negociación efectiva, resolución de conflictos y win-win</p>
+      </div>
+    </div>
+
+    <div className="curriculum-item">
+      <span className="curriculum-number">20</span>
+      <div className="curriculum-content">
+        <h4>Técnicas de venta directa</h4>
+        <p>Cierre de ventas, aumentar tickes y conversión de oportunidades</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="topic-section">
+  <div className="topic-section__title">
+    <h2>🚀 Actividades Prácticas Integrales</h2>
+    <span className="topic-section__meta">Aplica lo aprendido en tres desafíos que consolidarán tu aprendizaje</span>
+  </div>
+
+  {/* ACTIVIDAD 1: CANVA */}
+  <details className="topic-details" style={{ marginBottom: 'var(--space-4)' }}>
+    <summary style={{ backgroundColor: '#ecfdf5', padding: 'var(--space-3)', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold', fontSize: '1.1em' }}>
+      📊 Actividad 1: Infografía en Canva - "Mi Ruta del Aprendizaje"
+    </summary>
+    <div className="topic-details__content" style={{ marginTop: 'var(--space-3)' }}>
+      <p style={{ marginBottom: 'var(--space-3)' }}>
+        <strong>Objetivo:</strong> Responder de forma visual las preguntas iniciales que planteamos al principio del manual.
+      </p>
+
+      <div className="callout callout--activity" style={{ backgroundColor: '#f0fdf4', borderLeft: '4px solid #10b981' }}>
+        <div className="callout-title">¿Qué debes hacer?</div>
+        <ol style={{ marginLeft: 'var(--space-4)', lineHeight: '1.8', marginBottom: 0 }}>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            Abre <strong>Canva</strong> (versión gratuita es suficiente)
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            Elige una plantilla de <strong>infografía, presentación o póster</strong>
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            Responde visualmente estas seis preguntas clave:
+            <ul style={{ marginTop: 'var(--space-2)', marginLeft: 'var(--space-4)' }}>
+              <li>¿Diferencia entre satisfacción y lealtad?</li>
+              <li>¿Cómo recuperar una mala experiencia?</li>
+              <li>¿Calidad vs. Excelencia?</li>
+              <li>¿Rol de la inteligencia emocional en atención difícil?</li>
+              <li>¿Importancia de los "momentos de verdad"?</li>
+              <li>¿Por qué la comunicación es el sistema nervioso de la empresa?</li>
+            </ul>
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            Incluye <strong>iconos, colores y datos</strong> del manual
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            Comparte tu infografía con tu formador o equipo
+          </li>
+        </ol>
+      </div>
+
+      <div className="callout callout--example" style={{ marginTop: 'var(--space-3)', backgroundColor: '#fef3c7', borderLeft: '4px solid #f59e0b' }}>
+        <div className="callout-title">⏱️ Tiempo estimado: 45-60 minutos</div>
+        <p style={{ marginBottom: 0 }}>
+          <strong>Se valorará:</strong> Claridad de las respuestas, uso visual, originalidad y cómo conectas los conceptos del manual.
+        </p>
+      </div>
+    </div>
+  </details>
+
+  {/* ACTIVIDAD 2: EJERCICIO POR PAREJAS */}
+  <details className="topic-details" style={{ marginBottom: 'var(--space-4)' }}>
+    <summary style={{ backgroundColor: '#fdf2f8', padding: 'var(--space-3)', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold', fontSize: '1.1em' }}>
+      👥 Actividad 2: Role-Playing por Parejas - "Atención al Cliente Desafiante"
+    </summary>
+    <div className="topic-details__content" style={{ marginTop: 'var(--space-3)' }}>
+      <p style={{ marginBottom: 'var(--space-3)' }}>
+        <strong>Objetivo:</strong> Practicar habilidades de comunicación, inteligencia emocional y resolución de conflictos en tiempo real.
+      </p>
+
+      <div className="callout callout--activity" style={{ backgroundColor: '#fef3c7', borderLeft: '4px solid #f59e0b' }}>
+        <div className="callout-title">🎭 Escenarios a Representar</div>
+        <p style={{ marginBottom: 'var(--space-2)' }}>Cada pareja elegirá uno de los siguientes escenarios:</p>
+        <ul style={{ marginLeft: 'var(--space-4)', lineHeight: '1.8', marginBottom: 0 }}>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>Escenario 1:</strong> Un cliente llora de frustración porque su pedido se perdió. Llevas 10 minutos en una llamada telefónica sin resolver nada.
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>Escenario 2:</strong> Una cliente alega que el producto no es lo que le vendieron. Te acusa de fraude en redes sociales en tiempo real.
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>Escenario 3:</strong> Un cliente corporativo amenaza con cambiar de proveedor tras una entrega retrasada. Tú eres el único disponible.
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>Escenario 4:</strong> Un cliente devuelve un producto "defectuoso", pero claramente ha sido usado sin cuidado. Insiste en reembolso total.
+          </li>
+        </ul>
+      </div>
+
+      <div style={{ backgroundColor: '#f0fdf4', padding: 'var(--space-3)', borderRadius: '8px', marginTop: 'var(--space-3)', borderLeft: '4px solid #10b981' }}>
+        <p style={{ marginBottom: 'var(--space-2)', fontWeight: 'bold' }}>📋 Instrucciones para la pareja:</p>
+        <ol style={{ marginLeft: 'var(--space-4)', lineHeight: '1.8', marginBottom: 0 }}>
+          <li>Un rol es el <strong>cliente difícil</strong>, otro es el <strong>profesional de atención</strong></li>
+          <li>Representad el escenario durante <strong>5-7 minutos</strong></li>
+          <li>El profesional debe aplicar:<br/>
+            <ul style={{ marginTop: '0.5rem', marginLeft: 'var(--space-4)' }}>
+              <li>Escucha activa</li>
+              <li>Empatía genuina (no fingida)</li>
+              <li>Soluciones creativas</li>
+              <li>Gestión emocional bajo presión</li>
+            </ul>
+          </li>
+          <li>Después, intercambiad roles y repetid con otro escenario</li>
+          <li>Retroalimentación: 3 minutos para explicar qué salió bien y qué mejorar</li>
+        </ol>
+      </div>
+
+      <div className="callout callout--example" style={{ marginTop: 'var(--space-3)', backgroundColor: '#dbeafe', borderLeft: '4px solid #0ea5e9' }}>
+        <div className="callout-title">⏱️ Tiempo estimado: 30-40 minutos (30 en parejas + 10 de feedback)</div>
+        <p style={{ marginBottom: 0 }}>
+          <strong>Se valorará:</strong> Autenticidad de la actuación, aplicación de conceptos, gestión emocional real y capacidad de adaptación ante lo inesperado.
+        </p>
+      </div>
+    </div>
+  </details>
+
+  {/* ACTIVIDAD 3: DEBATE */}
+  <details className="topic-details">
+    <summary style={{ backgroundColor: '#f5f3ff', padding: 'var(--space-3)', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold', fontSize: '1.1em' }}>
+      🎤 Actividad 3: Debate/Mesa Redonda - "Dilemas de Atención al Cliente"
+    </summary>
+    <div className="topic-details__content" style={{ marginTop: 'var(--space-3)' }}>
+      <p style={{ marginBottom: 'var(--space-3)' }}>
+        <strong>Objetivo:</strong> Analizar críticamente situaciones complejas y desarrollar pensamiento estratégico en atención al cliente.
+      </p>
+
+      <div className="callout callout--activity" style={{ backgroundColor: '#fdf2f8', borderLeft: '4px solid #ec4899' }}>
+        <div className="callout-title">❓ Preguntas Abiertas para el Debate</div>
+        <p style={{ marginBottom: 'var(--space-3)', fontStyle: 'italic' }}>El formador elegirá 3-4 preguntas. El grupo debatirá durante 5-10 minutos cada una.</p>
+        <ol style={{ marginLeft: 'var(--space-4)', lineHeight: '1.8', marginBottom: 0 }}>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>¿Está justificado decirle "no" a un cliente si su petición va contra los valores de la empresa?</strong> 
+            <br/><span style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', display: 'block' }}>
+              ¿Cómo lo harías con profesionalidad sin perder la relación?
+            </span>
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>¿Es posible mantener excelencia en atención si estás quemado (burnout)?</strong>
+            <br/><span style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', display: 'block' }}>
+              ¿Qué responsabilidad tiene la empresa vs. el trabajador?
+            </span>
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>¿Qué es más importante: retener un cliente difícil o proteger el bienestar del equipo?</strong>
+            <br/><span style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', display: 'block' }}>
+              ¿Existen límites éticos en la atención al cliente?
+            </span>
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>En 2030, ¿cómo será la atención al cliente: más humana, más automatizada o un híbrido?</strong>
+            <br/><span style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', display: 'block' }}>
+              ¿Qué habilidades deberán desarrollar los profesionales?
+            </span>
+          </li>
+          <li style={{ marginBottom: 'var(--space-2)' }}>
+            <strong>¿Es posible "perdonar" a una marca tras una experiencia traumática?</strong>
+            <br/><span style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', display: 'block' }}>
+              ¿Cuánto cuesta recuperar la confianza perdida?
+            </span>
+          </li>
+          <li style={{ marginBottom: 0 }}>
+            <strong>¿Quién es el "verdadero cliente" de atención al cliente: la persona que llama o la empresa que paga?</strong>
+            <br/><span style={{ fontSize: '0.9em', color: '#666', marginTop: '0.5rem', display: 'block' }}>
+              ¿Cómo se resuelven los conflictos de intereses?
+            </span>
+          </li>
+        </ol>
+      </div>
+
+      <div style={{ backgroundColor: '#ecfdf5', padding: 'var(--space-3)', borderRadius: '8px', marginTop: 'var(--space-3)', borderLeft: '4px solid #10b981' }}>
+        <p style={{ marginBottom: 'var(--space-2)', fontWeight: 'bold' }}>📋 Dinámica del Debate:</p>
+        <ul style={{ marginLeft: 'var(--space-4)', lineHeight: '1.8', marginBottom: 0 }}>
+          <li>El formador plantea una pregunta</li>
+          <li>Cada participante tiene <strong>1 minuto</strong> para exponer su posición</li>
+          <li>Se genera <strong>discusión abierta</strong> durante 5-10 minutos</li>
+          <li>Se identifican puntos de acuerdo y desacuerdo</li>
+          <li>El formador sintetiza aprendizajes clave relacionados con el manual</li>
+        </ul>
+      </div>
+
+      <div className="callout callout--example" style={{ marginTop: 'var(--space-3)', backgroundColor: '#dbeafe', borderLeft: '4px solid #0ea5e9' }}>
+        <div className="callout-title">⏱️ Tiempo estimado: 45-60 minutos (según cantidad de preguntas)</div>
+        <p style={{ marginBottom: 0 }}>
+          <strong>Se valorará:</strong> Argumentación basada en conceptos del manual, respeto por otras opiniones, capacidad de sintetizar ideas y pensamiento crítico.
+        </p>
+      </div>
+    </div>
+  </details>
+
+  <div style={{ backgroundColor: '#fef3c7', padding: 'var(--space-4)', borderRadius: '8px', marginTop: 'var(--space-4)', borderLeft: '4px solid #f59e0b' }}>
+    <p style={{ marginBottom: 'var(--space-2)', fontWeight: 'bold' }}>
+      ✅ Al completar las tres actividades:
+    </p>
+    <ul style={{ marginLeft: 'var(--space-4)', lineHeight: '1.8', marginBottom: 0 }}>
+      <li>Habrás aplicado la teoría a la práctica</li>
+      <li>Habrás expuesto tu pensamiento crítico</li>
+      <li>Habrás trabajado en equipo y desarrollado habilidades de comunicación</li>
+      <li>Estarás preparado para afrontar situaciones reales de atención al cliente con confianza</li>
+    </ul>
   </div>
 </section>
 

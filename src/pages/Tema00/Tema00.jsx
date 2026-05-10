@@ -14,6 +14,51 @@ export default function Tema00() {
       intro="Este tema no pretende señalar culpables, sino identificar los errores más frecuentes en la atención al cliente para transformarlos en oportunidades de mejora. Reconocer que los errores son síntomas del sistema —no fracasos personales— es el primer paso hacia una atención profesional y ética. Comenzamos por aquí porque comprender dónde se falla es el mejor aprendizaje."
       image={image}
     >
+      {/* ===================== ACTIVIDAD INICIAL ===================== */}
+      <section className="topic-section" style={{ backgroundColor: '#f0f4ff', padding: '2rem', borderRadius: '12px', borderLeft: '4px solid #4f46e5', marginBottom: '2rem' }}>
+        <h2 style={{ color: '#4f46e5' }}>🎯 Actividad Inicial: Preguntas que Responderemos Juntos</h2>
+        <p style={{ fontSize: '1rem', color: '#666', marginBottom: '1.5rem' }}>
+          <em>Antes de continuar, plantéate estas preguntas. No hay respuestas "correctas"—solo tu perspectiva actual. Volveremos a ellas al final del tema.</em>
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #ec4899' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 1: El Error que Más Temes Cometer</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>De los 12 errores críticos, ¿cuál crees que es más fácil cometer bajo presión? ¿Por qué?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: Los errores ocurren en momentos de estrés, no cuando todo va bien.</p>
+          </div>
+
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #f59e0b' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 2: Reconocimiento del Error</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>¿Alguna vez has cometido uno de estos errores sin darte cuenta en el momento? ¿Cómo lo descubriste?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: Con frecuencia, los clientes son los primeros en notarlo.</p>
+          </div>
+
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #10b981' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 3: Diferencia Entre Error y Fracaso</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>¿Cuál es la diferencia entre cometer un error en atención al cliente y ser un mal profesional?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: El error es un evento; tu respuesta al error define quién eres como profesional.</p>
+          </div>
+
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #0ea5e9' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 4: Prevención vs. Reacción</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>¿Es mejor predecir dónde vas a fallar o esperar a que el cliente se queje?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: Un error previsto es un error controlado.</p>
+          </div>
+
+          <div style={{ backgroundColor: '#fff', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid #8b5cf6' }}>
+            <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1.05em' }}>❓ Pregunta 5: Cultura del Error en Tu Empresa</p>
+            <p style={{ color: '#666', marginBottom: '0.8rem' }}>¿En tu empresa se castiga el error o se aprende de él? ¿Cómo afecta esto a tu disposición a reconocer fallos?</p>
+            <p style={{ fontSize: '0.9em', color: '#888', fontStyle: 'italic' }}>💡 Pista: Si tienes miedo a ser castigado, ocultarás errores. Si esperas aprender, los reconocerás rápido.</p>
+          </div>
+        </div>
+
+        <div style={{ marginTop: '1.5rem', backgroundColor: '#ecfdf5', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #10b981' }}>
+          <p style={{ marginBottom: 0, fontWeight: 'bold' }}>📝 Tu Tarea Ahora:</p>
+          <p style={{ marginBottom: 0, color: '#666' }}>Anota tus respuestas en un documento (word, note, o papel). Serán tu "foto instantánea" de tu perspectiva HOY. Al final del tema, volveremos a estas preguntas y verás cómo ha evolucionado tu comprensión.</p>
+        </div>
+      </section>
+
       {/* ===================== SECCIÓN 1 ===================== */}
       <section className="topic-section">
         <h2>1. ¿Por Qué Empezar por los Errores?</h2>
@@ -334,6 +379,208 @@ export default function Tema00() {
           <li>¿Qué mentalidad o creencia necesitas cambiar para mejorar?</li>
           <li>¿Quién en tu equipo merecería reconocimiento por cometer pocos de estos errores? ¿Qué hace diferente?</li>
         </ol>
+      </section>
+
+      {/* ===================== ACTIVIDADES PRÁCTICAS FINALES ===================== */}
+      <section className="topic-section" style={{ marginBottom: '2rem', backgroundColor: '#fef3c7', padding: '2rem', borderRadius: '12px', borderLeft: '4px solid #f59e0b' }}>
+        <h2 style={{ color: '#d97706' }}>💼 ACTIVIDADES PRÁCTICAS: Identificar, Representar, Reconocer</h2>
+        <p style={{ fontSize: '1rem', color: '#666', marginBottom: '2rem' }}>
+          Estas tres actividades te permitirán aplicar lo aprendido de forma inmediata y práctica. Cada una tiene un objetivo claro y un resultado mensurable.
+        </p>
+
+        {/* ACTIVIDAD 1: CANVA */}
+        <details style={{ marginBottom: '1.5rem', backgroundColor: '#ecfdf5', borderRadius: '8px', padding: '1rem', cursor: 'pointer' }}>
+          <summary style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#10b981', padding: '1rem', cursor: 'pointer' }}>
+            📊 Actividad 1: Infografía en Canva - "Mis Errores Críticos"
+          </summary>
+          <div style={{ padding: '1.5rem', backgroundColor: '#fff', marginTop: '1rem', borderRadius: '8px' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              <strong>Objetivo:</strong> Responder visualmente las 5 preguntas iniciales y crear un documento reflexivo sobre tus puntos débiles.
+            </p>
+
+            <div style={{ backgroundColor: '#f0fdf4', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #10b981', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '1rem' }}>📋 ¿Qué debes hacer?</p>
+              <ol style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+                <li style={{ marginBottom: '0.8rem' }}>Abre <strong>Canva</strong> (versión gratuita es suficiente)</li>
+                <li style={{ marginBottom: '0.8rem' }}>Elige una plantilla de <strong>infografía, póster o presentación</strong></li>
+                <li style={{ marginBottom: '0.8rem' }}>Responde estas 5 preguntas de forma visual:
+                  <ul style={{ marginTop: '0.5rem', marginLeft: '1rem' }}>
+                    <li>¿Cuál es tu error crítico personal bajo presión?</li>
+                    <li>¿Cuándo lo ha cometido sin darte cuenta?</li>
+                    <li>¿Cómo se diferencia un error de un fracaso profesional?</li>
+                    <li>¿Cómo preventor? (Qué estructura o protocolo necesitas)</li>
+                    <li>¿Cómo es la cultura del error en tu empresa?</li>
+                  </ul>
+                </li>
+                <li style={{ marginBottom: '0.8rem' }}>Incluye <strong>iconos, colores y ejemplos reales</strong> del tema</li>
+                <li style={{ marginBottom: '0.8rem' }}>Guarda como PDF y comparte con el formador</li>
+              </ol>
+            </div>
+
+            <div style={{ backgroundColor: '#dbeafe', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid #0ea5e9' }}>
+              <p style={{ marginBottom: 0 }}>
+                <strong>⏱️ Tiempo estimado:</strong> 45-60 minutos | <strong>Entrega:</strong> PDF con 5 respuestas visuales
+              </p>
+            </div>
+          </div>
+        </details>
+
+        {/* ACTIVIDAD 2: ROLE-PLAYING */}
+        <details style={{ marginBottom: '1.5rem', backgroundColor: '#fdf2f8', borderRadius: '8px', padding: '1rem', cursor: 'pointer' }}>
+          <summary style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#ec4899', padding: '1rem', cursor: 'pointer' }}>
+            👥 Actividad 2: Role-Playing por Parejas - "Cacería de Errores"
+          </summary>
+          <div style={{ padding: '1.5rem', backgroundColor: '#fff', marginTop: '1rem', borderRadius: '8px' }}>
+            <p style={{ marginBottom: '1.5rem' }}>
+              <strong>Objetivo:</strong> Por parejas, representar uno de los 12 errores. El resto del grupo tiene que identificar cuál es y explicar por qué es un error crítico.
+            </p>
+
+            <div style={{ backgroundColor: '#fef3c7', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #f59e0b', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '1.5rem' }}>🎭 Dinámica del Juego (Paso a Paso)</p>
+              
+              <div style={{ marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#d97706', marginBottom: '0.8rem' }}>📌 PREPARACIÓN (10 minutos)</p>
+                <ol style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+                  <li>Se divide el grupo en <strong>n parejas</strong> (si hay 20 alumnos, 10 parejas)</li>
+                  <li>Cada pareja elige <strong>UNO de los 12 errores</strong> (sin que otras parejas lo sepan)</li>
+                  <li>Escriben un <strong>mini-escenario de 3-4 líneas</strong> donde cometen ese error de forma clara:
+                    <ul style={{ marginTop: '0.5rem', marginLeft: '1rem', fontSize: '0.95em' }}>
+                      <li>Ejemplo: Si eligen "No escuchar activamente", preparan: "Cliente llama pidiendo solución. Profesional prepara respuesta mientras cliente habla e interrumpe"</li>
+                      <li>El error debe ser <strong>obvio pero reconocible</strong></li>
+                    </ul>
+                  </li>
+                  <li>Ensayan 2-3 veces para estar seguros</li>
+                </ol>
+              </div>
+
+              <div style={{ marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#d97706', marginBottom: '0.8rem' }}>🎬 REPRESENTACIÓN (25-30 minutos)</p>
+                <ol style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+                  <li>Primera pareja sube (o sale) y representa su escenario (<strong>2-3 minutos máximo</strong>)</li>
+                  <li>El resto del grupo observa en SILENCIO (sin interrumpir)</li>
+                  <li>Al terminar, el formador pregunta: <strong>"¿Qué error crítico acaban de ver?"</strong></li>
+                  <li>Los observadores tienen <strong>30 segundos</strong> para levantar la mano y proponer la respuesta</li>
+                  <li>Si acierten, reciben <strong>punto para su equipo</strong>. Si fallan, la pareja que actuó revela el error</li>
+                  <li>Explicación rápida (30 seg): ¿Por qué es este error crítico? ¿Cuál es su coste?</li>
+                  <li>Siguiente pareja sale. <strong>Repitiendo hasta que todas hayan actuado</strong></li>
+                </ol>
+              </div>
+
+              <div style={{ marginBottom: '2rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#d97706', marginBottom: '0.8rem' }}>🏆 CIERRE (5 minutos)</p>
+                <ul style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+                  <li>Contabilizar puntos: Equipo que más errores identificó gana</li>
+                  <li>Reflexión: "¿Cuál fue el error más 'camuflado'? ¿Cuál el más obvio? ¿Por qué?"</li>
+                  <li>Preguntar: "¿Habéis cometido alguno de estos en la vida real?"</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style={{ backgroundColor: '#f5f3ff', padding: '1.5rem', borderRadius: '8px', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.8rem' }}>📑 Los 12 Errores Posibles (para elegir):</p>
+              <ol style={{ marginLeft: '1.5rem', lineHeight: '1.8', fontSize: '0.95em' }}>
+                <li>No escuchar activamente | 2. Culpabilizar al cliente | 3. Prometer lo que no se puede cumplir</li>
+                <li>Ser impersonal/robótico | 5. Perder la paciencia | 6. Usar jerga técnica sin simplificar</li>
+                <li>No documentar la interacción | 8. Ignorar feedback | 9. Justificarse en lugar de disculparse</li>
+                <li>Violar confidencialidad | 11. Asumir la emoción del cliente | 12. No dar seguimiento</li>
+              </ol>
+            </div>
+
+            <div style={{ backgroundColor: '#dbeafe', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid #0ea5e9' }}>
+              <p style={{ marginBottom: 0 }}>
+                <strong>⏱️ Tiempo estimado:</strong> 40-50 minutos en clase | <strong>Participantes:</strong> Todos | <strong>Resultado:</strong> Vivencia práctica + reconocimiento grupal de errores
+              </p>
+            </div>
+          </div>
+        </details>
+
+        {/* ACTIVIDAD 3: DEBATE */}
+        <details style={{ marginBottom: '1.5rem', backgroundColor: '#f5f3ff', borderRadius: '8px', padding: '1rem', cursor: 'pointer' }}>
+          <summary style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#8b5cf6', padding: '1rem', cursor: 'pointer' }}>
+            🎤 Actividad 3: Debate/Mesa Redonda - "Dilemas de Recuperación"
+          </summary>
+          <div style={{ padding: '1.5rem', backgroundColor: '#fff', marginTop: '1rem', borderRadius: '8px' }}>
+            <p style={{ marginBottom: '1.5rem' }}>
+              <strong>Objetivo:</strong> Discutir en grupo cómo recuperarse de cada error crítico y qué factores sistémicos lo podrían haber prevenido.
+            </p>
+
+            <div style={{ backgroundColor: '#fdf2f8', padding: '1.5rem', borderRadius: '8px', borderLeft: '4px solid #ec4899', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '1.5rem' }}>❓ Preguntas Abiertas (El Formador Elige 3-4)</p>
+              
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 1: Culpabilidad Compartida</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "Si un empleado comete el error #2 (culpabilizar al cliente), ¿de quién es la culpa: del empleado, del jefe que no lo entrenó, o del sistema que presiona por cerrar rápido?"
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 2: Recuperación vs. Prevención</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "¿Es mejor capacitar a los empleados para NO cometer errores o entrenarlos para RECUPERARSE brillantemente cuando los cometen? ¿Por qué?"
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 3: Confidencialidad en Crisis</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "Error #10 (confidencialidad). Si se rompe, ¿es recoverable? Si sí, ¿cómo? Si no, ¿qué significa eso para la cultura empresarial?"
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 4: Estrés vs. Excusa</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "¿Hasta qué punto el estrés laboral EXPLICA los errores? ¿Dónde termina la explicación y empieza la excusa?"
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem', borderBottom: '1px solid #ec4899', paddingBottom: '1rem' }}>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 5: Diferencia Entre Industrias</p>
+                <p style={{ color: '#666', fontSize: '0.95em' }}>
+                  "¿Hay errores que son críticos en retail pero tolerables en telecomunicaciones? ¿Por qué algunos errores son más 'perdonables' en ciertos sectores?"
+                </p>
+              </div>
+
+              <div>
+                <p style={{ fontWeight: 'bold', color: '#ec4899', marginBottom: '0.5rem' }}>Pregunta 6: Cultura vs. Castigo</p>
+                <p style={{ color: '#666', fontSize: '0.95em', marginBottom: 0 }}>
+                  "Si tu empresa castiga severamente los errores, ¿qué pasará? ¿Los empleados cometerán MENOS errores o simplemente los OCULTARÁN mejor?"
+                </p>
+              </div>
+            </div>
+
+            <div style={{ backgroundColor: '#ecfdf5', padding: '1.5rem', borderRadius: '8px', marginBottom: '1.5rem' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '1rem' }}>🎙️ Dinámica del Debate</p>
+              <ol style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+                <li>Formador plantea <strong>una pregunta</strong></li>
+                <li>Cada persona tiene <strong>máximo 1 minuto</strong> para dar su posición (si quiere intervenir)</li>
+                <li>Se abre <strong>discusión libre</strong> durante <strong>5-7 minutos</strong></li>
+                <li>Formador sintetiza los puntos clave y los conecta con el tema</li>
+                <li>Se anotan las <strong>mejores ideas/insights</strong> en un documento compartido</li>
+              </ol>
+            </div>
+
+            <div style={{ backgroundColor: '#dbeafe', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid #0ea5e9' }}>
+              <p style={{ marginBottom: 0 }}>
+                <strong>⏱️ Tiempo estimado:</strong> 45-60 minutos | <strong>Resultado:</strong> Construcción colectiva de comprensión + pensamiento crítico
+              </p>
+            </div>
+          </div>
+        </details>
+
+        {/* RESUMEN DE ACTIVIDADES */}
+        <div style={{ marginTop: '2rem', backgroundColor: '#ecfdf5', padding: '2rem', borderRadius: '12px', borderLeft: '4px solid #10b981' }}>
+          <p style={{ fontWeight: 'bold', marginBottom: '1rem', fontSize: '1.1em', color: '#10b981' }}>✅ Resumen: Tres Práctica, Un Objetivo</p>
+          <ul style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+            <li><strong>Actividad 1 (Canva):</strong> Reflexión personal → Documentación visual de tus aprendizajes</li>
+            <li><strong>Actividad 2 (Role-Playing):</strong> Vivencia inmersiva → Reconocimiento grupal de errores reales</li>
+            <li><strong>Actividad 3 (Debate):</strong> Pensamiento estratégico → Conexión con realidad empresarial</li>
+          </ul>
+          <p style={{ marginTop: '1.5rem', marginBottom: 0, fontStyle: 'italic', color: '#666' }}>
+            Al final de estas tres actividades, habrás identificado tus errores personales, practicado reconocer errores en otros, y desarrollado pensamiento crítico sobre cómo prevenirlos sistémicamente.
+          </p>
+        </div>
       </section>
 
       {/* ===================== SECCIÓN 7 ===================== */}
