@@ -14,6 +14,27 @@
   display: flex;
   flex: 1;
   min-height: 0; /* clave para que overflow funcione */
+  position: relative;
+}
+
+/* Overlay detrás del sidebar en móvil (solo se monta cuando el drawer está abierto) */
+.layout-nav-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .layout-nav-overlay {
+    display: block;
+    position: fixed;
+    inset: var(--header-height) 0 0 0;
+    z-index: 850;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 /* Contenido principal

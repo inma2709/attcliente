@@ -42,11 +42,24 @@ const menuItems = [
 ];
 
 
-const Sidebar = ({ isCollapsed, onToggle }) => {
+const Sidebar = ({ isCollapsed, onToggle, mobileNavOpen = false, onCloseMobile }) => {
   const location = useLocation();
 
+  const toggleAriaLabel = mobileNavOpen
+    ? 'Cerrar menú de contenidos'
+    : isCollapsed
+      ? 'Mostrar barra lateral'
+      : 'Ocultar barra lateral';
+
+  const handleNavClick = () => {
+    onCloseMobile?.();
+  };
+
   return (
-    <aside className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+    <aside
+      id="site-sidebar"
+      className={`sidebar ${isCollapsed ? 'collapsed' : ''} ${mobileNavOpen ? 'open' : ''}`}
+    >
       <div className="sidebar-content">
         <div className="sidebar-header">
           <div className="sidebar-header-content">
@@ -56,8 +69,14 @@ const Sidebar = ({ isCollapsed, onToggle }) => {
             <button 
               className="sidebar-toggle"
               onClick={onToggle}
-              aria-label={isCollapsed ? 'Mostrar barra lateral' : 'Ocultar barra lateral'}
-              title={isCollapsed ? 'Mostrar barra lateral (Ctrl+B)' : 'Ocultar barra lateral (Ctrl+B)'}
+              aria-label={toggleAriaLabel}
+              title={
+                mobileNavOpen
+                  ? 'Cerrar menú'
+                  : isCollapsed
+                    ? 'Mostrar barra lateral (Ctrl+B)'
+                    : 'Ocultar barra lateral (Ctrl+B)'
+              }
             >
               <span className="toggle-icon">
                 {isCollapsed ? '▶' : '◀'}
@@ -73,6 +92,7 @@ const Sidebar = ({ isCollapsed, onToggle }) => {
                   to={item.path}
                   className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
                   title={isCollapsed ? item.title : ''}
+                  onClick={handleNavClick}
                 >
                   <span className="nav-icon">{item.icon}</span>
                   {!isCollapsed && <span className="nav-text">{item.title}</span>}
